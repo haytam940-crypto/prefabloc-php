@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60">
+  <rect width="160" height="60" fill="white"/>
+  <path d="M20,16 L20,48 L40,48" stroke="#0072CE" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="106" y="38" font-family="Arial Black, Arial" font-weight="900" font-size="26" fill="#0072CE" text-anchor="middle" letter-spacing="3">LYDEC</text>
+</svg>

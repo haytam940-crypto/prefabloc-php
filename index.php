@@ -260,9 +260,20 @@ include 'includes/header.php';
     </div>
     <div class="clients-grid">
       <?php
-      $clients = ['Groupe OCP','CDG Développement','Addoha','Sonadac','Al Omrane','Lydec','Marsa Maroc','ONCF'];
-      foreach ($clients as $i => $c): ?>
-      <div class="client-logo reveal scale reveal-delay-<?= ($i % 4) + 1 ?>"><?= $c ?></div>
+      $clients = [
+        ['Groupe OCP',       'ocp'],
+        ['CDG Développement','cdg'],
+        ['Addoha',           'addoha'],
+        ['Sonadac',          'sonadac'],
+        ['Al Omrane',        'alomrane'],
+        ['Lydec',            'lydec'],
+        ['Marsa Maroc',      'marsamaroc'],
+        ['ONCF',             'oncf'],
+      ];
+      foreach ($clients as $i => [$name, $file]): ?>
+      <div class="client-logo reveal scale reveal-delay-<?= ($i % 4) + 1 ?>">
+        <img src="assets/images/clients/<?= $file ?>.svg" alt="<?= htmlspecialchars($name) ?>" loading="lazy">
+      </div>
       <?php endforeach ?>
     </div>
   </div>

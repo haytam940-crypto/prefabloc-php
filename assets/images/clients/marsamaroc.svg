@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60">
+  <rect width="160" height="60" fill="white"/>
+  <path d="M14,44 Q22,18 30,36 Q38,18 46,36" stroke="#003A70" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <text x="108" y="26" font-family="Arial Black, Arial" font-weight="900" font-size="14" fill="#003A70" text-anchor="middle" letter-spacing="1">MARSA</text>
+  <text x="108" y="46" font-family="Arial Black, Arial" font-weight="900" font-size="14" fill="#003A70" text-anchor="middle" letter-spacing="1">MAROC</text>
+</svg>

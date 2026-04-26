@@ -650,16 +650,27 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--white);
   border: 1.5px solid var(--gray-light);
   border-radius: 10px;
-  height: 80px;
+  height: 88px;
   display: flex; align-items:center; justify-content:center;
-  font-weight: 700; font-size: 13.5px; color: var(--gray);
-  letter-spacing: .5px; text-align:center; padding: 0 16px;
-  transition: border-color .25s, color .25s, box-shadow .25s, transform .25s;
+  padding: 12px 20px;
+  transition: border-color .25s, box-shadow .25s, transform .25s;
+  overflow: hidden;
+}
+.client-logo img {
+  max-width: 100%; max-height: 56px;
+  width: auto; height: auto;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: filter .25s, transform .25s;
 }
 .client-logo:hover {
-  border-color: var(--gold); color: var(--navy);
+  border-color: var(--gold);
   box-shadow: 0 4px 20px rgba(0,174,239,.2);
   transform: translateY(-3px);
+}
+.client-logo:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.04);
 }
 
 /* ══════════════════════════════

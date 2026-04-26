@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60">
+  <rect width="160" height="60" fill="white"/>
+  <rect x="0" y="54" width="160" height="6" fill="#003A70"/>
+  <text x="80" y="38" font-family="Arial Black, Arial" font-weight="900" font-size="30" fill="#003A70" text-anchor="middle" letter-spacing="4">CDG</text>
+</svg>
