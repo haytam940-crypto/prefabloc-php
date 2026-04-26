@@ -53,7 +53,7 @@ $page = basename($_SERVER['PHP_SELF'], '.php');
 <header class="navbar">
   <div class="container nav-inner">
     <a href="<?= $root ?? '' ?>index.php" class="nav-logo">
-      <img src="<?= $root ?? '' ?>assets/images/logo.svg" alt="Prefa Bloc — Construction &amp; développement immobilier" class="nav-logo-img">
+      <img src="<?= $root ?? '' ?>assets/images/logo.png" alt="Prefa Bloc — Construction &amp; développement immobilier" class="nav-logo-img">
     </a>
     <nav class="nav-links" aria-label="Navigation principale">
       <a href="<?= $root ?? '' ?>index.php">Accueil</a>
