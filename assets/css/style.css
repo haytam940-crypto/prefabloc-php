@@ -124,7 +124,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   text-decoration: none; flex-shrink: 0;
 }
 .nav-logo-img {
-  height: 50px; width: auto;
+  height: 56px; width: auto;
   display: block;
 }
 .nav-links {

@@ -4,7 +4,7 @@
       <!-- Col 1 — Brand -->
       <div>
         <div class="footer-logo">
-          <img src="<?= $root ?? '' ?>assets/images/logo.png" alt="Prefa Bloc — Construction &amp; développement immobilier" class="footer-logo-img">
+          <img src="<?= $root ?? '' ?>assets/images/logo.svg" alt="Prefa Bloc — Construction &amp; développement immobilier" class="footer-logo-img">
         </div>
         <p class="footer-desc">Gros œuvre, charpente, VRD, second œuvre — Prefabloc prend en charge l'intégralité de vos chantiers depuis 2009, avec ses propres équipes et son parc matériel dans 8 régions du Maroc.</p>
         <div class="footer-socials">
