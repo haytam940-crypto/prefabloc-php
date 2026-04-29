@@ -8,7 +8,38 @@ include 'includes/header.php';
   <div class="container">
     <div class="breadcrumb"><a href="index.php">Accueil</a><span>›</span><span>Contact</span></div>
     <h1>Déposez votre Dossier</h1>
-    <p>Plans architecturaux, avant-projet sommaire ou simple description — envoyez-nous ce que vous avez. Nos ingénieurs analysent votre projet et vous retournent une offre de prix et un planning prévisionnel sous 48h ouvrées.</p>
+    <p>Plans architecturaux, avant-projet sommaire ou simple description — envoyez-nous ce que vous avez. Nos ingénieurs analysent votre projet et vous retournent une offre sous 48h ouvrées.</p>
+  </div>
+</div>
+
+<!-- Process rapide -->
+<div class="contact-process">
+  <div class="container">
+    <div class="contact-steps">
+      <div class="contact-step reveal up">
+        <div class="step-num">01</div>
+        <div class="step-icon"><?= icon('clipboard',26) ?></div>
+        <div class="step-label">Décrivez votre projet</div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="contact-step reveal up reveal-delay-1">
+        <div class="step-num">02</div>
+        <div class="step-icon"><?= icon('building',26) ?></div>
+        <div class="step-label">Nos ingénieurs analysent</div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="contact-step reveal up reveal-delay-2">
+        <div class="step-num">03</div>
+        <div class="step-icon"><?= icon('lightning',26) ?></div>
+        <div class="step-label">Offre sous 48h ouvrées</div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="contact-step reveal up reveal-delay-3">
+        <div class="step-num">04</div>
+        <div class="step-icon"><?= icon('handshake',26) ?></div>
+        <div class="step-label">Chantier lancé</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -75,6 +106,17 @@ include 'includes/header.php';
 
       <!-- Sidebar -->
       <div class="contact-sidebar reveal right">
+
+        <!-- Photo réalisation -->
+        <div class="contact-photo-card">
+          <img src="assets/images/realisations/IMG_4201.jpg" alt="Réalisation Prefabloc" class="contact-photo">
+          <div class="contact-photo-overlay">
+            <div class="contact-photo-stat"><span class="cps-val">120+</span><span class="cps-lbl">Ouvrages livrés</span></div>
+            <div class="contact-photo-stat"><span class="cps-val">15</span><span class="cps-lbl">Ans d'expérience</span></div>
+            <div class="contact-photo-stat"><span class="cps-val">48h</span><span class="cps-lbl">Délai offre</span></div>
+          </div>
+        </div>
+
         <div class="info-card">
           <h3>Nos coordonnées</h3>
           <div class="info-item">
@@ -113,15 +155,6 @@ include 'includes/header.php';
           </div>
         </div>
 
-        <div class="map-card">
-          <div class="map-icon"><?= icon('pin',36) ?></div>
-          <div class="map-city">Casablanca, Maroc</div>
-          <div class="map-addr">Bd Zerktouni, 20100</div>
-          <a href="https://maps.google.com/?q=Boulevard+Zerktouni+Casablanca+Maroc" target="_blank" rel="noopener" class="btn btn-gold" style="width:100%;justify-content:center;font-size:13px;padding:10px;margin-top:4px">
-            Itinéraire Google Maps →
-          </a>
-        </div>
-
         <div class="quick-card">
           <h4>Besoin d'une réponse immédiate ?</h4>
           <p>Pour les projets urgents ou les chantiers en cours de démarrage, appelez directement notre direction technique. Disponible du lundi au vendredi de 08h30 à 17h30.</p>
@@ -131,9 +164,9 @@ include 'includes/header.php';
     </div>
 
     <!-- FAQ -->
-    <div style="margin-top:64px">
-      <div class="sec-head reveal up" style="margin-bottom:36px">
-        <span class="sec-tag">Questions techniques</span>
+    <div style="margin-top:72px">
+      <div class="sec-head" style="margin-bottom:36px">
+        <span class="sec-tag reveal up">Questions techniques</span>
         <h2 class="sec-title reveal up reveal-delay-1">CE QUE NOS CLIENTS<br>NOUS DEMANDENT</h2>
         <div class="divider-line reveal up reveal-delay-2"></div>
       </div>
@@ -154,6 +187,19 @@ include 'includes/header.php';
     </div>
   </div>
 </section>
+
+<!-- Réalisations mini-bande -->
+<div class="contact-ref-strip">
+  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_1342.jpg" alt="Réf 1"></div>
+  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_5076.jpg" alt="Réf 2"></div>
+  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_4194.jpg" alt="Réf 3"></div>
+  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_4527.jpg" alt="Réf 4"></div>
+  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_4202.jpg" alt="Réf 5"></div>
+  <div class="contact-ref-text">
+    <span>+ 120 chantiers réalisés au Maroc</span>
+    <a href="realisations.php">Voir le portfolio →</a>
+  </div>
+</div>
 
 <section class="cta-banner">
   <div class="container">

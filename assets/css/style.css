@@ -1371,3 +1371,604 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   /* Filter buttons — ensure they wrap and don't overflow */
   .filter-btn { font-size:12px; padding:8px 14px; }
 }
+
+/* =========================================================
+   SERVICES PAGE — redesign
+   ========================================================= */
+
+/* Photo strip banner */
+.srv-photo-strip {
+  display: flex;
+  height: 260px;
+  overflow: hidden;
+  gap: 3px;
+}
+.srv-strip-item {
+  flex: 1;
+  overflow: hidden;
+  transition: flex .4s ease;
+}
+.srv-strip-item:hover { flex: 2.2; }
+.srv-strip-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+.srv-strip-item:hover img { transform: scale(1.04); }
+
+/* Service layout */
+.srv-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.srv-layout.srv-reverse { direction: rtl; }
+.srv-layout.srv-reverse > * { direction: ltr; }
+
+/* Visual block */
+.srv-visual {
+  position: relative;
+}
+.srv-img-main {
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  box-shadow: 0 16px 48px rgba(0,0,0,.12);
+}
+.srv-img-main img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+.srv-visual:hover .srv-img-main img { transform: scale(1.03); }
+.srv-img-thumb {
+  position: absolute;
+  bottom: -22px;
+  right: -22px;
+  width: 45%;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  box-shadow: 0 8px 28px rgba(0,0,0,.18);
+  border: 3px solid #fff;
+}
+.srv-img-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.srv-img-label {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: rgba(11,31,58,.85);
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.srv-img-label svg { color: var(--gold); }
+
+/* Service content */
+.srv-content { padding: 0 0 32px; }
+.srv-title {
+  font-size: clamp(20px, 2.8vw, 32px);
+  font-weight: 900;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: -.3px;
+  margin: 14px 0 0;
+  line-height: 1.15;
+}
+.srv-desc {
+  color: var(--gray);
+  line-height: 1.8;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+.srv-feats {
+  list-style: none;
+  padding: 0; margin: 0 0 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+}
+.srv-feats li {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 13.5px;
+  color: var(--navy-dark);
+  font-weight: 500;
+  line-height: 1.45;
+}
+.srv-feats li svg { color: var(--sky); flex-shrink: 0; margin-top: 2px; }
+
+/* Mosaic photo wall */
+.srv-mosaic {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 220px 220px;
+  gap: 4px;
+  margin-top: 48px;
+}
+.srv-mosaic-item {
+  overflow: hidden;
+}
+.srv-mosaic-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+.srv-mosaic-item:hover img { transform: scale(1.06); }
+.srv-mosaic-tall {
+  grid-row: span 2;
+}
+
+/* =========================================================
+   CONTACT PAGE — redesign
+   ========================================================= */
+
+/* Process steps bar */
+.contact-process {
+  background: var(--navy-dark);
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.contact-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.contact-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
+  min-width: 140px;
+  transition: background .25s, border-color .25s;
+}
+.contact-step:hover {
+  background: rgba(212,175,55,.08);
+  border-color: rgba(212,175,55,.3);
+}
+.step-num {
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+.step-icon {
+  color: #fff;
+  display: flex;
+}
+.step-icon svg { width: 26px; height: 26px; }
+.step-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  line-height: 1.3;
+}
+.step-arrow {
+  color: rgba(255,255,255,.3);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* Contact photo card */
+.contact-photo-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  aspect-ratio: 16/9;
+}
+.contact-photo {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.contact-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11,31,58,.85) 0%, rgba(11,31,58,.2) 60%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 20px 16px;
+}
+.contact-photo-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.cps-val {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+}
+.cps-lbl {
+  font-size: 11px;
+  color: rgba(255,255,255,.75);
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-align: center;
+}
+
+/* Contact reference strip */
+.contact-ref-strip {
+  display: flex;
+  height: 180px;
+  overflow: hidden;
+  gap: 3px;
+}
+.contact-ref-item {
+  flex: 1;
+  overflow: hidden;
+}
+.contact-ref-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .4s;
+}
+.contact-ref-item:hover img { transform: scale(1.07); }
+.contact-ref-text {
+  flex: 1.6;
+  background: var(--navy-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+}
+.contact-ref-text span {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  letter-spacing: .3px;
+}
+.contact-ref-text a {
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212,175,55,.4);
+  padding-bottom: 2px;
+  transition: border-color .2s;
+}
+.contact-ref-text a:hover { border-color: var(--gold); }
+
+/* =========================================================
+   À PROPOS PAGE — redesign
+   ========================================================= */
+
+/* Photo reel full-width */
+.ap-photo-reel {
+  display: flex;
+  height: 280px;
+  overflow: hidden;
+  gap: 3px;
+}
+.ap-reel-item {
+  flex: 1;
+  overflow: hidden;
+  transition: flex .4s ease;
+}
+.ap-reel-item:hover { flex: 2.5; }
+.ap-reel-wide { flex: 1.8; }
+.ap-reel-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+.ap-reel-item:hover img { transform: scale(1.04); }
+
+/* Team section with photo background */
+.ap-team-section {
+  position: relative;
+  overflow: hidden;
+}
+.ap-team-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.ap-team-bg img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+.ap-team-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(6,15,30,.94) 0%, rgba(11,31,58,.88) 100%);
+}
+
+/* Numbers overlay section */
+.ap-numbers-section {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.ap-numbers-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.ap-numbers-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.ap-numbers-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(6,15,30,.92) 0%, rgba(11,31,58,.85) 100%);
+}
+.ap-numbers-content {
+  position: relative;
+  z-index: 2;
+}
+.ap-numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,.07);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.ap-num {
+  text-align: center;
+  padding: 44px 24px;
+  background: rgba(11,31,58,.6);
+  backdrop-filter: blur(8px);
+  border-top: 3px solid transparent;
+  transition: border-color .25s, background .25s;
+}
+.ap-num:hover {
+  border-top-color: var(--gold);
+  background: rgba(11,31,58,.75);
+}
+.ap-num-val {
+  font-size: clamp(40px, 5vw, 60px);
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.ap-num-val span {
+  font-size: clamp(28px, 3.5vw, 40px);
+}
+.ap-num-lbl {
+  font-size: 12px;
+  color: rgba(255,255,255,.65);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   PROJET (FICHE CHANTIER) PAGE — redesign
+   ========================================================= */
+
+/* Hero photo pleine largeur */
+.projet-hero {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+}
+.projet-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.projet-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(6,15,30,.9) 0%, rgba(6,15,30,.5) 50%, rgba(6,15,30,.2) 100%);
+}
+.projet-hero-content {
+  position: absolute;
+  bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 100%;
+  padding-bottom: 40px;
+  z-index: 2;
+}
+.projet-badge {
+  display: inline-block;
+  background: rgba(0,174,239,.2);
+  color: #33C3F0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+.projet-hero-title {
+  font-size: clamp(24px, 4vw, 48px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0 0 14px;
+  letter-spacing: -.5px;
+}
+.projet-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  color: rgba(255,255,255,.8);
+  font-size: 14px;
+  font-weight: 500;
+}
+.projet-hero-meta svg { vertical-align: middle; }
+
+/* Gallery projet */
+.proj-gallery { margin-bottom: 24px; }
+.proj-gallery-main {
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.1);
+}
+.proj-gallery-main img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+.proj-gallery-main:hover img { transform: scale(1.02); }
+.proj-gallery-thumbs {
+  display: flex;
+  gap: 10px;
+}
+.proj-gallery-thumb {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  cursor: pointer;
+  border: 2.5px solid transparent;
+  transition: border-color .2s, transform .2s;
+}
+.proj-gallery-thumb.active {
+  border-color: var(--gold);
+}
+.proj-gallery-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.proj-gallery-thumb:hover { transform: translateY(-2px); }
+
+/* Project description */
+.proj-desc {
+  background: var(--offwhite, #F5F6FA);
+  border: 1px solid var(--gray-light, #E5E7EB);
+  border-left: 4px solid var(--gold);
+  border-radius: 12px;
+  padding: 28px;
+}
+.proj-desc-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(0,174,239,.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.proj-desc-title svg { color: var(--sky); }
+.proj-desc p {
+  color: #6b7280;
+  line-height: 1.85;
+}
+
+/* Related cards with photos */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.related-card-img {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  display: block;
+  text-decoration: none;
+  box-shadow: 0 6px 24px rgba(0,0,0,.1);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.related-card-img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.15);
+}
+.related-card-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+.related-card-img:hover img { transform: scale(1.05); }
+.related-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(6,15,30,.88) 0%, transparent 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.related-cat {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+.related-card-overlay h4 {
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 4px;
+  line-height: 1.3;
+}
+.related-card-overlay p {
+  font-size: 12px;
+  color: rgba(255,255,255,.7);
+}
+
+/* =========================================================
+   RESPONSIVE — new components
+   ========================================================= */
+@media (max-width: 1024px) {
+  .srv-layout { grid-template-columns: 1fr; gap: 40px; }
+  .srv-layout.srv-reverse { direction: ltr; }
+  .srv-img-thumb { width: 40%; bottom: -16px; right: -12px; }
+  .srv-feats { grid-template-columns: 1fr; }
+  .srv-mosaic { grid-template-columns: repeat(3, 1fr); grid-template-rows: 180px 180px; }
+  .srv-mosaic-tall { grid-row: span 1; }
+  .ap-numbers-grid { grid-template-columns: repeat(2, 1fr); }
+  .related-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .srv-photo-strip { height: 160px; }
+  .srv-strip-item { flex: 1 !important; }
+  .srv-mosaic { grid-template-columns: repeat(2, 1fr); grid-template-rows: 140px 140px 140px; }
+  .contact-process { padding: 16px 0; }
+  .contact-steps { gap: 8px; }
+  .contact-step { min-width: 110px; padding: 10px 12px; }
+  .step-label { font-size: 11px; }
+  .step-arrow { display: none; }
+  .contact-ref-strip { height: 120px; flex-wrap: wrap; }
+  .contact-ref-text { min-width: 100%; height: 80px; flex-direction: row; gap: 16px; }
+  .ap-photo-reel { height: 180px; }
+  .ap-reel-item { flex: 1 !important; }
+  .ap-reel-wide { flex: 1 !important; }
+  .ap-numbers-grid { grid-template-columns: 1fr 1fr; }
+  .projet-hero { height: 360px; }
+  .projet-hero-title { font-size: clamp(20px, 6vw, 32px); }
+  .proj-gallery-thumbs { gap: 6px; }
+  .related-grid { grid-template-columns: 1fr; }
+}

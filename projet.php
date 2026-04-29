@@ -1,60 +1,79 @@
 <?php
+$realPhotos = [
+  'residence-jardins-palmeraie' => ['IMG_1342','IMG_4201','IMG_4202'],
+  'complexe-palm-casablanca'    => ['IMG_4201','IMG_4202','IMG_5076'],
+  'residence-prestige-pool'     => ['IMG_4202','IMG_1342','IMG_4527'],
+  'immeuble-belveder'           => ['IMG_4170','IMG_4171','IMG_4544'],
+  'immeuble-structure-ba'       => ['IMG_4171','IMG_4170','IMG_0295'],
+  'facade-residence-moderne'    => ['IMG_4194','IMG_4544','IMG_5076'],
+  'villa-prestige-piscine'      => ['IMG_4527','IMG_1342','IMG_4202'],
+  'lotissement-maisons'         => ['IMG_5070','IMG_5076','IMG_4194'],
+  'residence-al-waha'           => ['IMG_5076','IMG_5070','IMG_4201'],
+  'immeuble-commerces-rdc'      => ['IMG_4544','IMG_4545','IMG_4171'],
+  'gros-oeuvre-structure'       => ['IMG_0295','IMG_4846','IMG_4459'],
+  'chantier-structure-marrakech'=> ['IMG_4458','IMG_4471','IMG_4549'],
+];
+
 $projects = [
-  'villa-moderne-ain-diab' => [
-    'title' => 'Villa Moderne Aïn Diab', 'cat' => 'Résidentiel', 'city' => 'Casablanca',
-    'year' => 2023, 'surface' => '520 m²', 'duration' => '14 mois', 'client' => 'Maître d\'ouvrage privé', 'status' => 'Réceptionné',
-    'desc' => 'Construction en gros œuvre et second œuvre d\'une villa de standing R+2 avec sous-sol sur terrain de 800 m² en zone R1 d\'Aïn Diab. Fondations sur semelles isolées et longrines en béton armé dosé à 350 kg/m³, voiles de soutènement du sous-sol, structure poteaux-poutres BA avec dalles pleine. Second œuvre intégral : isolation thermique sous chape, revêtements marbre Khenifra, menuiseries aluminium à rupture thermique, piscine enterrée 8×4 m avec local technique, aménagement jardin paysager sur 300 m².',
-    'imgs' => ['https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&h=600&fit=crop'],
-    'related' => ['immeuble-residentiel-maarif','residence-luxe-souissi'],
+  'residence-jardins-palmeraie' => [
+    'title' => 'Résidence Les Jardins', 'cat' => 'Résidentiel', 'city' => 'Marrakech',
+    'year' => 2023, 'surface' => '3 800 m² SHON', 'duration' => '18 mois', 'client' => 'Promoteur privé', 'status' => 'Réalisé',
+    'desc' => 'Ensemble résidentiel de prestige à Marrakech comprenant plusieurs bâtiments R+3 organisés autour d\'espaces paysagers communs. Structure poteaux-poutres en béton armé dosé à 350 kg/m³ sur fondations radier général. Façades en enduit tyrolien avec claustra décoratifs. Aménagement paysager sur 1 200 m² avec bassins d\'agrément, palmiers et systèmes d\'arrosage automatique. Piscine collective 15×6 m avec local technique. Livré avec 8 jours d\'avance sur le planning contractuel.',
   ],
-  'immeuble-residentiel-maarif' => [
-    'title' => 'Immeuble Résidentiel Maarif', 'cat' => 'Résidentiel', 'city' => 'Casablanca',
-    'year' => 2022, 'surface' => '3 200 m² SHON', 'duration' => '24 mois', 'client' => 'Groupe Aloha Immobilier', 'status' => 'Réceptionné',
-    'desc' => 'Réalisation clé en main d\'un immeuble R+6 sur sous-sol double comprenant 28 appartements du T2 au T4. Fondations sur radier général de 60 cm d\'épaisseur (béton C30/37), voiles de contreventement calculés selon le RPS 2011 (zone sismique 2), 7 niveaux de planchers hourdis avec isolation phonique intercalée. Façades en briques HDB de parement avec système ITE (isolation thermique par l\'extérieur). Ascenseur panoramique KONE 630 kg, parking sous-sol pour 32 véhicules, terrasse commune avec pergola et espace vert de 180 m².',
-    'imgs' => ['https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=900&h=600&fit=crop'],
-    'related' => ['villa-moderne-ain-diab','residence-luxe-souissi'],
+  'complexe-palm-casablanca' => [
+    'title' => 'Complexe Palm Résidences', 'cat' => 'Résidentiel', 'city' => 'Casablanca',
+    'year' => 2022, 'surface' => '5 200 m² SHON', 'duration' => '22 mois', 'client' => 'Groupe Aloha Immobilier', 'status' => 'Réalisé',
+    'desc' => 'Complexe résidentiel haut standing comprenant deux immeubles R+5 et R+7 reliés par un podium commun abritant commerces et parkings. Fondations sur pieux forés Ø600 à 12 m de profondeur. Structure voiles et poteaux calculés RPS 2011 zone sismique 2. Façades aluminium laqué avec balcons filants en béton blanc matricé. Piscine à débordement 20×8 m en terrasse, fitness, espace détente commun. 112 appartements livrés en standing premium.',
   ],
-  'residence-luxe-souissi' => [
-    'title' => 'Résidence Prestige Souissi', 'cat' => 'Résidentiel', 'city' => 'Rabat',
-    'year' => 2023, 'surface' => '4 800 m² SHON', 'duration' => '20 mois', 'client' => 'SCI Souissi Invest', 'status' => 'En cours',
-    'desc' => 'Ensemble résidentiel sécurisé de 12 villas mitoyennes R+1, surface parcellaire totale 6 200 m². Structure poteaux-poutres BA sur fondations semelles filantes, murs de clôture périmétrique en béton désactivé, poste de gardiennage et portail coulissant motorisé. VRD internes : voirie bitumée avec trottoirs bordures CS1, réseau d\'eau potable Ø63 PEHD, réseau d\'assainissement EU Ø200 PVC, réseau d\'eaux pluviales avec bassin de rétention de 80 m³. Espaces verts communs de 1 200 m² avec système d\'arrosage automatique et éclairage solaire LED.',
-    'imgs' => ['https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1576941089067-2de3c901e126?w=900&h=600&fit=crop'],
-    'related' => ['villa-moderne-ain-diab','immeuble-residentiel-maarif'],
+  'residence-prestige-pool' => [
+    'title' => 'Résidence Prestige avec Piscine', 'cat' => 'Résidentiel', 'city' => 'Rabat',
+    'year' => 2023, 'surface' => '4 400 m² SHON', 'duration' => '20 mois', 'client' => 'SCI Souissi Invest', 'status' => 'Réalisé',
+    'desc' => 'Résidence sécurisée de 24 appartements standing supérieur en R+5 avec sous-sol deux niveaux pour stationnement. Radier général 65 cm, voiles de contreventement BA. Finitions de prestige : marbre Khenifra en parties communes, parquet chêne massif dans les logements, cuisine équipée avec plans Silestone. Piscine extérieure 18×6 m avec skimmer, local technique enterré. Espaces communs traités architecturalement avec pergola bois et mobilier de jardin.',
   ],
-  'immeuble-bureaux-technopark' => [
-    'title' => 'Immeuble de Bureaux Technopark', 'cat' => 'Commercial', 'city' => 'Casablanca',
-    'year' => 2021, 'surface' => '6 500 m² SHON', 'duration' => '28 mois', 'client' => 'Technopark Casablanca', 'status' => 'Réceptionné',
-    'desc' => 'Construction d\'un immeuble tertiaire R+8 à structure mixte poteaux HEB 340 et dalles collaborantes bac acier-béton. Fondations profondes sur 48 pieux forés Ø600 de 14 m de longueur (terrain argileux gonflant). Façades rideau aluminium avec vitrages doubles VEC (Verre Extérieur Collé), brise-soleil horizontaux. Second œuvre : cloisons sèches BA13 phoniques, faux plafonds à dalles 60×60 avec plénum technique, local onduleur et salles serveurs climatisées. Parkings couverts sur 2 niveaux pour 120 véhicules. Certification HQE visée et obtenue en phase réception.',
-    'imgs' => ['https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&h=600&fit=crop'],
-    'related' => ['showroom-automobile-marrakech','entrepot-logistique-tanger'],
+  'immeuble-belveder' => [
+    'title' => 'Immeuble Résidentiel Belvédère', 'cat' => 'Résidentiel', 'city' => 'Casablanca',
+    'year' => 2024, 'surface' => '4 800 m² SHON', 'duration' => '24 mois', 'client' => 'Promoteur Casablanca', 'status' => 'En cours',
+    'desc' => 'Immeuble R+7 à structure mixte voiles porteurs et poteaux béton armé dans le quartier Belvédère. Sous-sol double pour 48 parkings sur radier général. Planchers hourdis 20+5 avec isolation phonique intercalée. Façades briques HDB de parement avec joints soignés. Balcons filants avec garde-corps verre feuilleté. En cours d\'exécution au niveau R+4, livraison prévue dans les délais contractuels.',
   ],
-  'showroom-automobile-marrakech' => [
-    'title' => 'Showroom Automobile Premium', 'cat' => 'Commercial', 'city' => 'Marrakech',
-    'year' => 2022, 'surface' => '1 800 m²', 'duration' => '10 mois', 'client' => 'Auto Premium Maroc', 'status' => 'Réceptionné',
-    'desc' => 'Construction d\'un showroom automobile de 1 800 m² sur un seul niveau avec mezanine administrative. Dalle de sol en béton poli Q4 sur hérisson compacté, portique métallique HEA 260 sans poteau intermédiaire pour une superficie d\'exposition de 900 m² dégagée. Fosses de levage hydraulique pour les 8 postes d\'atelier, caniveaux de récupération des huiles et eaux de lavage vers séparateur à hydrocarbures. Façade principale en verre feuilleté sur structure tubulaire acier thermolaqué blanc, signalétique lumineuse intégrée. Livré en 10 mois avec zéro réserve à la réception.',
-    'imgs' => ['https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&h=600&fit=crop'],
-    'related' => ['immeuble-bureaux-technopark','entrepot-logistique-tanger'],
+  'immeuble-structure-ba' => [
+    'title' => 'Immeuble R+5 Structure BA', 'cat' => 'Résidentiel', 'city' => 'Casablanca',
+    'year' => 2024, 'surface' => '3 600 m² SHON', 'duration' => '26 mois', 'client' => 'Promoteur privé Anfa', 'status' => 'En cours',
+    'desc' => 'Immeuble de logements R+5+terrasse en structure voiles porteurs béton armé à Casablanca Anfa. Fondations sur semelles filantes et longrines ancrées à -2,50 m du terrain naturel. Voiles de 20 cm calculés BAEL 91 pour une résistance caractéristique de 25 MPa. Planchers dalles pleine 20 cm. Coffrage tunnel utilisé pour les niveaux 1 à 5 assurant une cadence d\'un niveau par semaine. Chantier en phase gros œuvre.',
   ],
-  'entrepot-logistique-tanger' => [
-    'title' => 'Entrepôt Logistique Tanger Med', 'cat' => 'Industriel', 'city' => 'Tanger',
-    'year' => 2023, 'surface' => '12 000 m²', 'duration' => '18 mois', 'client' => 'Logistique Maroc SA', 'status' => 'En cours',
-    'desc' => 'Entrepôt de grande hauteur (13 m sous faîtage) en zone franche Tanger Med. Charpente métallique lourde à portiques HEA 500 tous les 12 m sur une longueur de 200 m, couverture bac acier isolé laine de roche 100 mm, bardage acier façades. Dallage industriel Q5 de 25 cm d\'épaisseur sur fondations semelles isolées calculées pour des charges d\'exploitation de 5 t/m². 8 quais de chargement à niveau avec niveleurs hydrauliques 6 t, 2 accès PL by-pass. Chambre froide négative de 800 m³ avec groupe frigorifique en toiture et isolation polyuréthane 150 mm. Réseaux incendie sprinklers ESFR pour stockage en grande hauteur.',
-    'imgs' => ['https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&h=600&fit=crop'],
-    'related' => ['voirie-zone-industrielle-berrechid','immeuble-bureaux-technopark'],
+  'facade-residence-moderne' => [
+    'title' => 'Résidence Moderne Façade Mixte', 'cat' => 'Résidentiel', 'city' => 'Rabat',
+    'year' => 2022, 'surface' => '2 900 m² SHON', 'duration' => '16 mois', 'client' => 'SCI Prestige Rabat', 'status' => 'Réalisé',
+    'desc' => 'Résidence de 18 appartements en R+4 avec une conception architecturale soignée mêlant enduit ciment blanc, briques apparentes et claustra béton préfabriqués. Façade principale orientée nord-ouest avec protections solaires fixes calculées. Second œuvre complet : isolation thermique ITE 6 cm polystyrène expansé, menuiseries ALU à rupture thermique, carrelage grand format 80×80 dans les parties communes. Livraison sans réserve à la réception définitive.',
   ],
-  'voirie-zone-industrielle-berrechid' => [
-    'title' => 'Voirie Zone Industrielle Berrechid', 'cat' => 'Travaux Publics', 'city' => 'Berrechid',
-    'year' => 2022, 'surface' => '45 000 ml de voirie', 'duration' => '16 mois', 'client' => 'Commune Urbaine de Berrechid', 'status' => 'Réceptionné',
-    'desc' => 'Aménagement complet de la voirie primaire et secondaire d\'une zone industrielle de 80 hectares. Terrassements généraux de 120 000 m³, purge des zones argileuses et substitution par tout-venant de carrière. Réseau d\'assainissement EU gravitaire Ø300 à Ø800 PVC SN8 sur 18 km, réseau EP Ø400 à Ø1000 BA centrifugé sur 12 km, 4 bassins de retenue pluviaux. Chaussées en bicouche puis BBSG 0/10 sur fondation GNT 0/31,5 avec accotements stabilisés. Éclairage public 420 candélabres LED 150W sur fourreau Ø90, signalisation horizontale peinture routière et panneaux de signalisation NM en 80×80. Réception prononcée avec 11 jours d\'avance sur le calendrier contractuel.',
-    'imgs' => ['https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&h=600&fit=crop'],
-    'related' => ['entrepot-logistique-tanger','renovation-hotel-fes'],
+  'villa-prestige-piscine' => [
+    'title' => 'Villa Prestige & Aménagement', 'cat' => 'Résidentiel', 'city' => 'Marrakech',
+    'year' => 2022, 'surface' => '620 m²', 'duration' => '14 mois', 'client' => 'Maître d\'ouvrage privé', 'status' => 'Réalisé',
+    'desc' => 'Villa individuelle de standing exceptionnel sur terrain de 1 200 m² dans le quartier de la Palmeraie. Structure poteaux-poutres R+1 avec terrasse accessible. Piscine débordement 12×5 m sur dalle béton armé, local technique enterré. Aménagement extérieur complet : dallage en pierre de Boulmane, pergola lamellé-collé, salon extérieur couvert, potager paysager et jardin irrigué. Revêtements intérieurs haut de gamme : tadelakt, marbre et bois de cèdre. Livraison en 14 mois avec suivi hebdomadaire du maître d\'ouvrage.',
   ],
-  'renovation-hotel-fes' => [
-    'title' => 'Rénovation Hôtel Palais Fassi', 'cat' => 'Rénovation', 'city' => 'Fès',
-    'year' => 2023, 'surface' => '2 100 m²', 'duration' => '12 mois', 'client' => 'Groupe Hospitality Maroc', 'status' => 'Réceptionné',
-    'desc' => 'Réhabilitation complète d\'un riad du 19e siècle en hôtel boutique 4 étoiles classifié par le CRT Fès. Diagnostic structurel préalable avec sondages carottés sur les murs en pisé et briques cuites : renforcement par chaînage horizontal en BA et injection de mortier de chaux hydraulique dans les fissures actives. Restauration des éléments patrimoniaux : repose de 480 m² de zellige de Fès à la chaux grasse sur planéité 5 mm/m, taille et pose de stucs Tadelakt dans les 18 salles de bain, remplacement des 260 m² de gebs en plafonds moucharabiehs. Mise aux normes incendie (désenfumage, bloc-portes CF2h, extincteurs), accessibilité PMR et création d\'un hammam thermal de 80 m².',
-    'imgs' => ['https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=900&h=600&fit=crop','https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=900&h=600&fit=crop'],
-    'related' => ['villa-moderne-ain-diab','voirie-zone-industrielle-berrechid'],
+  'lotissement-maisons' => [
+    'title' => 'Lotissement Villas Individuelles', 'cat' => 'Résidentiel', 'city' => 'Casablanca',
+    'year' => 2024, 'surface' => '8 500 m² SHON', 'duration' => '30 mois', 'client' => 'Groupe Développement Sud', 'status' => 'En cours',
+    'desc' => 'Lotissement de 24 villas individuelles R+1 en gated community sur terrain de 3,5 ha. VRD complets : voirie bitumée 4 m + trottoirs, réseau AEP Ø63 PEHD, assainissement EU Ø200 PVC, éclairage solaire LED. Chaque villa : fondations semelles filantes, structure poteaux-poutres, 180 m² habitables + garage 2 véhicules + terrasse couverte 40 m². Espaces communs avec poste de gardiennage, portail automatique, parc 800 m². Chantier en phase gros œuvre des villas 1 à 12.',
+  ],
+  'residence-al-waha' => [
+    'title' => 'Résidence Al Waha', 'cat' => 'Résidentiel', 'city' => 'Mohammedia',
+    'year' => 2022, 'surface' => '3 200 m² SHON', 'duration' => '18 mois', 'client' => 'Promoteur Mohammedia Développement', 'status' => 'Réalisé',
+    'desc' => 'Résidence de 32 appartements économiques et moyen standing en R+4 à Mohammedia. Réalisée dans le cadre du programme Al Omrane avec financement garanti. Structure voiles porteurs béton armé C25/30, planchers hourdis 16+4 avec dalle de compression 5 cm. Façades enduit monocouche coloré. Finitions solides et durables : carrelage grès cérame 40×40, menuiseries bois, peinture vinylique. Opération livrée avec 100% de réserves levées avant la réception définitive.',
+  ],
+  'immeuble-commerces-rdc' => [
+    'title' => 'Immeuble Mixte Commerces R+4', 'cat' => 'Commercial', 'city' => 'Casablanca',
+    'year' => 2021, 'surface' => '2 800 m² SHON', 'duration' => '20 mois', 'client' => 'Investisseur privé Casablanca', 'status' => 'Réalisé',
+    'desc' => 'Immeuble mixte à usage commercial en rez-de-chaussée et résidentiel en étages R+4. Grandes portées au RDC (8 m) par structure poteaux-poutres avec béton C30/37. Façade commerciale toute hauteur en aluminium et verre feuilleté. Etages résidentiels : 16 appartements T2 et T3 avec loggia. Second œuvre des locaux commerciaux brut livraison pour aménagement locataire. Installations techniques : gaines ascenseur, locaux VDI, tableaux électriques divisionnaires. Réceptionné avec zéro réserve.',
+  ],
+  'gros-oeuvre-structure' => [
+    'title' => 'Gros Œuvre — Structure Poteaux-Dalles', 'cat' => 'Résidentiel', 'city' => 'Tanger',
+    'year' => 2024, 'surface' => '2 400 m² SHON', 'duration' => '12 mois', 'client' => 'Promoteur Tanger Bay', 'status' => 'En cours',
+    'desc' => 'Mission gros œuvre seule sur immeuble R+4 à Tanger — structure poteaux-dalles pleines en béton armé C25/30. Fouilles mécanisées, semelles isolées et longrines, voiles périmétriques du sous-sol. Dalles pleines 18 cm avec prédalle préfabriquée. Contrôle béton systématique : essais d\'affaissement et éprouvettes 7j/28j à chaque coulage. Planning gros œuvre : un niveau toutes les 3 semaines. Chantier suivi par un conducteur de travaux dédié et un topographe pour le contrôle du nivellement.',
+  ],
+  'chantier-structure-marrakech' => [
+    'title' => 'Chantier Structure Marrakech', 'cat' => 'Résidentiel', 'city' => 'Marrakech',
+    'year' => 2024, 'surface' => '3 000 m² SHON', 'duration' => '15 mois', 'client' => 'Promoteur Marrakech Invest', 'status' => 'En cours',
+    'desc' => 'Construction gros œuvre et second œuvre d\'un immeuble résidentiel R+5 dans la zone de Marrakech. Fondations sur radier général 55 cm, voiles porteurs BA calculés selon le RPS 2011 en zone sismique 2. Planchers hourdis à corps creux avec isolation phonique. Coffrage métallique réutilisable pour les voiles et poteaux. Phase actuelle : niveau R+3 coulé, R+4 en cours de coffrage. Livraison prévue à horizon 15 mois depuis le démarrage.',
   ],
 ];
 
@@ -63,21 +82,30 @@ if (!isset($projects[$slug])) {
     header('Location: realisations.php');
     exit;
 }
-$p = $projects[$slug];
+$p     = $projects[$slug];
+$imgs  = $realPhotos[$slug] ?? ['IMG_4201','IMG_4170','IMG_4544'];
 $meta_title = $p['title'] . ' — Réalisations Prefabloc';
 $meta_desc  = mb_substr(strip_tags($p['desc']), 0, 160);
 include 'includes/header.php';
 ?>
 
-<div class="page-hero">
-  <div class="container">
+<!-- Hero photo projet -->
+<div class="projet-hero">
+  <img src="assets/images/realisations/<?= $imgs[0] ?>.jpg" alt="<?= htmlspecialchars($p['title']) ?>" class="projet-hero-img">
+  <div class="projet-hero-overlay"></div>
+  <div class="projet-hero-content container">
     <div class="breadcrumb">
       <a href="index.php">Accueil</a><span>›</span>
       <a href="realisations.php">Réalisations</a><span>›</span>
       <span><?= htmlspecialchars($p['title']) ?></span>
     </div>
-    <div style="display:inline-block;background:rgba(0,174,239,.2);color:var(--gold-light,#33C3F0);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:12px"><?= $p['cat'] ?></div>
-    <h1><?= htmlspecialchars($p['title']) ?></h1>
+    <div class="projet-badge"><?= $p['cat'] ?></div>
+    <h1 class="projet-hero-title"><?= htmlspecialchars($p['title']) ?></h1>
+    <div class="projet-hero-meta">
+      <span><?= icon('pin',16) ?> <?= $p['city'] ?></span>
+      <span><?= icon('timer',16) ?> <?= $p['duration'] ?></span>
+      <span class="badge <?= $p['status'] === 'Réalisé' ? 'badge-status-done' : 'badge-status-ongoing' ?>"><?= $p['status'] ?></span>
+    </div>
   </div>
 </div>
 
@@ -86,21 +114,25 @@ include 'includes/header.php';
     <div class="project-detail-grid">
       <!-- Galerie + description -->
       <div>
-        <div class="gallery reveal up">
-          <div class="gallery-main">
-            <img id="galleryMain" src="<?= $p['imgs'][0] ?>" alt="<?= htmlspecialchars($p['title']) ?> — photo 1">
+        <!-- Galerie photos -->
+        <div class="proj-gallery reveal up">
+          <div class="proj-gallery-main">
+            <img id="galleryMain" src="assets/images/realisations/<?= $imgs[0] ?>.jpg" alt="<?= htmlspecialchars($p['title']) ?> — photo principale">
           </div>
-          <div class="gallery-thumbs">
-            <?php foreach ($p['imgs'] as $i => $img): ?>
-            <div class="gallery-thumb <?= $i === 0 ? 'active' : '' ?>" onclick="switchImg(this, '<?= htmlspecialchars($img) ?>')">
-              <img src="<?= str_replace('w=900&h=600', 'w=200&h=140', $img) ?>" alt="Vue chantier <?= $i+1 ?>">
+          <div class="proj-gallery-thumbs">
+            <?php foreach ($imgs as $i => $imgName): ?>
+            <div class="proj-gallery-thumb <?= $i === 0 ? 'active' : '' ?>"
+                 onclick="switchImg(this, 'assets/images/realisations/<?= $imgName ?>.jpg')">
+              <img src="assets/images/realisations/<?= $imgName ?>.jpg" alt="Vue chantier <?= $i+1 ?>">
             </div>
             <?php endforeach ?>
           </div>
         </div>
-        <div class="reveal up" style="background:var(--offwhite,#F5F6FA);border:1px solid var(--gray-light,#E5E7EB);border-left:4px solid var(--gold,#00AEEF);border-radius:12px;padding:28px;margin-top:0">
-          <h2 style="font-size:17px;font-weight:800;color:var(--navy,#0B1F3A);text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px;padding-bottom:12px;border-bottom:2px solid var(--gold,#00AEEF)">Descriptif technique du chantier</h2>
-          <p style="color:#6b7280;line-height:1.85"><?= htmlspecialchars($p['desc']) ?></p>
+
+        <!-- Description technique -->
+        <div class="proj-desc reveal up">
+          <h2 class="proj-desc-title"><?= icon('clipboard',18) ?> Descriptif technique du chantier</h2>
+          <p><?= htmlspecialchars($p['desc']) ?></p>
         </div>
       </div>
 
@@ -138,30 +170,42 @@ include 'includes/header.php';
       </div>
     </div>
 
-    <!-- Projets similaires -->
-    <?php if (!empty($p['related'])): ?>
-    <div style="margin-top:64px">
+    <!-- Autres réalisations -->
+    <div style="margin-top:72px">
       <div class="sec-head" style="margin-bottom:32px">
-        <span class="sec-tag">Dans la même catégorie</span>
-        <h2 class="sec-title reveal up" style="font-size:24px">AUTRES CHANTIERS <?= strtoupper($p['cat']) ?></h2>
+        <span class="sec-tag">Voir aussi</span>
+        <h2 class="sec-title reveal up" style="font-size:24px">AUTRES CHANTIERS RÉALISÉS</h2>
         <div class="divider-line"></div>
       </div>
       <div class="related-grid">
-        <?php foreach ($p['related'] as $rSlug):
-          if (!isset($projects[$rSlug])) continue;
-          $r = $projects[$rSlug];
+        <?php
+        $others = array_filter(array_keys($projects), fn($s) => $s !== $slug);
+        $others = array_slice(array_values($others), 0, 3);
+        foreach ($others as $rSlug):
+          $r     = $projects[$rSlug];
+          $rImgs = $realPhotos[$rSlug] ?? ['IMG_4201'];
         ?>
-        <a href="projet.php?slug=<?= $rSlug ?>" class="related-card reveal up">
-          <div class="related-cat"><?= $r['cat'] ?></div>
-          <h4><?= htmlspecialchars($r['title']) ?></h4>
-          <p><?= $r['city'] ?> · <?= $r['year'] ?> · <?= $r['surface'] ?></p>
+        <a href="projet.php?slug=<?= $rSlug ?>" class="related-card-img reveal up">
+          <img src="assets/images/realisations/<?= $rImgs[0] ?>.jpg" alt="<?= htmlspecialchars($r['title']) ?>">
+          <div class="related-card-overlay">
+            <div class="related-cat"><?= $r['cat'] ?></div>
+            <h4><?= htmlspecialchars($r['title']) ?></h4>
+            <p><?= $r['city'] ?> · <?= $r['duration'] ?></p>
+          </div>
         </a>
         <?php endforeach ?>
       </div>
     </div>
-    <?php endif ?>
   </div>
 </section>
+
+<script>
+function switchImg(thumb, src) {
+  document.getElementById('galleryMain').src = src;
+  document.querySelectorAll('.proj-gallery-thumb').forEach(t => t.classList.remove('active'));
+  thumb.classList.add('active');
+}
+</script>
 
 <section class="cta-banner">
   <div class="container">
