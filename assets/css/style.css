@@ -2849,6 +2849,113 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* =========================================================
    RESPONSIVE — new components
    ========================================================= */
+/* =========================================================
+   RESPONSIVE — ap2 / sv2 / logo marquee
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  /* A-propos v2 */
+  .ap2-hero { height: 420px; }
+  .ap2-split { grid-template-columns: 1fr; min-height: auto; }
+  .ap2-split-photo img { min-height: 320px; }
+  .ap2-split-text { padding: 48px 40px; }
+  .ap2-timeline { grid-template-columns: repeat(2,1fr); gap: 32px 0; }
+  .ap2-timeline::before { display: none; }
+  .ap2-stats-grid { grid-template-columns: repeat(2,1fr); }
+  .ap2-team { grid-template-columns: repeat(2,1fr); }
+  .ap2-section { padding: 56px 0; }
+
+  /* Services v2 */
+  .sv2-hero { height: 360px; }
+  .sv2-service-inner { grid-template-columns: 1fr; min-height: auto; }
+  .sv2-reverse { direction: ltr; }
+  .sv2-service-photo img { min-height: 260px; }
+  .sv2-service-content { padding: 44px 36px; }
+  .sv2-garanties-grid { grid-template-columns: repeat(2,1fr); }
+
+  /* Logo marquee */
+  .logo-marquee-wrap::before,
+  .logo-marquee-wrap::after { width: 80px; }
+}
+
+@media (max-width: 768px) {
+  /* A-propos v2 */
+  .ap2-hero { height: 320px; }
+  .ap2-hero-title { font-size: clamp(26px,8vw,42px); }
+  .ap2-hero-sub { font-size: 14px; }
+  .ap2-split { grid-template-columns: 1fr; }
+  .ap2-split-photo img { min-height: 240px; }
+  .ap2-split-text { padding: 36px 20px; }
+  .ap2-split-badge { bottom: 16px; left: 16px; padding: 12px 16px; }
+  .ap2-badge-num { font-size: 26px; }
+  .ap2-timeline { grid-template-columns: 1fr 1fr; gap: 28px 16px; padding: 0 16px; }
+  .ap2-tline-year { font-size: 18px; }
+  .ap2-tline-text { font-size: 12px; }
+  .ap2-stats-grid { grid-template-columns: repeat(2,1fr); }
+  .ap2-stat { padding: 28px 16px; }
+  .ap2-engage-item { grid-template-columns: 56px 1fr; gap: 16px; padding: 24px 0; }
+  .ap2-engage-num { display: none; }
+  .ap2-engage-icon { width: 56px; height: 56px; }
+  .ap2-engage-body h3 { font-size: 16px; }
+  .ap2-team { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .ap2-h2 { font-size: clamp(20px,6vw,32px); }
+  .ap2-h2-center { font-size: clamp(20px,6vw,32px); }
+  .ap2-section { padding: 48px 0; }
+  .ap2-sec-head { margin-bottom: 32px; }
+  .ap2-cert { padding: 0 18px; }
+  .ap2-cert-sep { height: 28px; }
+  .ap2-certs { gap: 8px 0; }
+
+  /* Services v2 */
+  .sv2-hero { height: 280px; }
+  .sv2-hero-sub { font-size: 14px; }
+  .sv2-hero-inner { padding-bottom: 32px; }
+  .sv2-nav { top: 60px; }
+  .sv2-nav-item { padding: 12px 14px; }
+  .sv2-nav-num { font-size: 10px; }
+  .sv2-nav-lbl { font-size: 12px; }
+  .sv2-service-inner { grid-template-columns: 1fr; }
+  .sv2-reverse { direction: ltr; }
+  .sv2-service-photo img { min-height: 220px; }
+  .sv2-service-content { padding: 32px 20px; }
+  .sv2-h2 { font-size: clamp(18px,5.5vw,26px); }
+  .sv2-feats { grid-template-columns: 1fr; gap: 8px; }
+  .sv2-garanties-grid { grid-template-columns: repeat(2,1fr); }
+  .sv2-garantie { padding: 28px 16px; }
+  .sv2-garantie-val { font-size: 22px; }
+
+  /* Logo marquee */
+  .logo-marquee-section { padding: 40px 0; }
+  .logo-marquee-wrap::before,
+  .logo-marquee-wrap::after { width: 48px; }
+  .logo-slide { padding: 0 28px; height: 64px; }
+  .logo-slide img { height: 36px; max-width: 110px; }
+}
+
+@media (max-width: 480px) {
+  /* A-propos v2 */
+  .ap2-hero { height: 260px; }
+  .ap2-timeline { grid-template-columns: 1fr 1fr; gap: 24px 8px; padding: 0 8px; }
+  .ap2-stats-grid { grid-template-columns: 1fr 1fr; }
+  .ap2-stat { padding: 20px 10px; }
+  .ap2-stat-val { font-size: clamp(28px,8vw,40px); }
+  .ap2-team { max-width: 100%; }
+  .ap2-certs { flex-direction: column; gap: 20px; }
+  .ap2-cert-sep { display: none; }
+  .ap2-cert { padding: 0; }
+
+  /* Services v2 */
+  .sv2-hero { height: 240px; }
+  .sv2-service-content { padding: 28px 16px; }
+  .sv2-garanties-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Logo marquee */
+  .logo-marquee-wrap::before,
+  .logo-marquee-wrap::after { width: 32px; }
+  .logo-slide { padding: 0 20px; height: 56px; }
+  .logo-slide img { height: 30px; max-width: 90px; }
+}
+
 @media (max-width: 1024px) {
   /* Réalisations bento */
   .rl-hero { height: 420px; }
