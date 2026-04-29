@@ -4,14 +4,18 @@ $meta_desc  = 'Plus de 120 ouvrages réceptionnés en 15 ans : immeubles réside
 include 'includes/header.php';
 
 $projects = [
-  ['villa-moderne-ain-diab','Villa Moderne Aïn Diab','Résidentiel','residential','Réalisé','Casablanca','14 mois','https://images.unsplash.com/photo-1613977257363-707ba9348227?w=700&h=525&fit=crop'],
-  ['immeuble-residentiel-maarif','Immeuble Résidentiel Maarif','Résidentiel','residential','Réalisé','Casablanca','24 mois','https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&h=525&fit=crop'],
-  ['residence-luxe-souissi','Résidence Prestige Souissi','Résidentiel','residential','En cours','Rabat','20 mois','https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=700&h=525&fit=crop'],
-  ['immeuble-bureaux-technopark','Immeuble de Bureaux Technopark','Commercial','commercial','Réalisé','Casablanca','28 mois','https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&h=525&fit=crop'],
-  ['showroom-automobile-marrakech','Showroom Automobile Premium','Commercial','commercial','Réalisé','Marrakech','10 mois','https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&h=525&fit=crop'],
-  ['entrepot-logistique-tanger','Entrepôt Logistique Tanger Med','Industriel','industrial','En cours','Tanger','18 mois','https://images.unsplash.com/photo-1553413077-190dd305871c?w=700&h=525&fit=crop'],
-  ['voirie-zone-industrielle-berrechid','Voirie Zone Industrielle Berrechid','Travaux Publics','tp','Réalisé','Berrechid','16 mois','https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&h=525&fit=crop'],
-  ['renovation-hotel-fes','Rénovation Hôtel Palais Fassi','Rénovation','renovation','Réalisé','Fès','12 mois','https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700&h=525&fit=crop'],
+  ['residence-jardins-palmeraie','Résidence Les Jardins','Résidentiel','residential','Réalisé','Marrakech','18 mois','assets/images/realisations/IMG_1342.jpg'],
+  ['complexe-palm-casablanca','Complexe Palm Résidences','Résidentiel','residential','Réalisé','Casablanca','22 mois','assets/images/realisations/IMG_4201.jpg'],
+  ['residence-prestige-pool','Résidence Prestige avec Piscine','Résidentiel','residential','Réalisé','Rabat','20 mois','assets/images/realisations/IMG_4202.jpg'],
+  ['immeuble-belveder','Immeuble Résidentiel Belvédère','Résidentiel','residential','En cours','Casablanca','24 mois','assets/images/realisations/IMG_4170.jpg'],
+  ['immeuble-structure-ba','Immeuble R+5 Structure BA','Résidentiel','residential','En cours','Casablanca','26 mois','assets/images/realisations/IMG_4171.jpg'],
+  ['facade-residence-moderne','Résidence Moderne Façade Mixte','Résidentiel','residential','Réalisé','Rabat','16 mois','assets/images/realisations/IMG_4194.jpg'],
+  ['villa-prestige-piscine','Villa Prestige & Aménagement','Résidentiel','residential','Réalisé','Marrakech','14 mois','assets/images/realisations/IMG_4527.jpg'],
+  ['lotissement-maisons','Lotissement Villas Individuelles','Résidentiel','residential','En cours','Casablanca','30 mois','assets/images/realisations/IMG_5070.jpg'],
+  ['residence-al-waha','Résidence Al Waha','Résidentiel','residential','Réalisé','Mohammedia','18 mois','assets/images/realisations/IMG_5076.jpg'],
+  ['immeuble-commerces-rdc','Immeuble Mixte Commerces R+4','Commercial','commercial','Réalisé','Casablanca','20 mois','assets/images/realisations/IMG_4544.jpg'],
+  ['gros-oeuvre-structure','Gros Œuvre — Structure Poteaux-Dalles','Résidentiel','residential','En cours','Tanger','12 mois','assets/images/realisations/IMG_0295.jpg'],
+  ['chantier-structure-marrakech','Chantier Structure Marrakech','Résidentiel','residential','En cours','Marrakech','15 mois','assets/images/realisations/IMG_4458.jpg'],
 ];
 
 $cats = ['all' => 'Tous', 'residential' => 'Résidentiel', 'commercial' => 'Commercial', 'industrial' => 'Industriel', 'tp' => 'Travaux Publics', 'renovation' => 'Rénovation'];
@@ -77,6 +81,80 @@ foreach ($projects as $p) {
     </div>
   </div>
 </section>
+
+<!-- Section Vidéo Chantier -->
+<section class="section" style="background:var(--navy-dark); padding-top:80px; padding-bottom:80px;">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-tag reveal up" style="background:rgba(255,255,255,.1);color:var(--gold);">Avancement</span>
+      <h2 class="sec-title reveal up reveal-delay-1" style="color:var(--white);">VIDÉO<br><span class="gold">CHANTIER</span></h2>
+      <div class="divider-line reveal up reveal-delay-2"></div>
+      <p class="sec-sub reveal up reveal-delay-3" style="color:rgba(255,255,255,.7);">Suivez l'avancement en temps réel de nos chantiers — du gros œuvre à la livraison.</p>
+    </div>
+
+    <div class="reveal up reveal-delay-1" style="max-width:900px;margin:0 auto;">
+      <div style="position:relative;border-radius:16px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.5); background:#000;">
+        <video
+          controls
+          preload="metadata"
+          style="width:100%;display:block;max-height:520px;object-fit:cover;"
+          poster="assets/images/realisations/IMG_4170.jpg">
+          <source src="assets/videos/chantier-primavera-web.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+      </div>
+      <p style="color:rgba(255,255,255,.5);font-size:13px;text-align:center;margin-top:16px;">
+        Avancement Chantier Primavera — Prefabloc
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Galerie Photos -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-tag reveal up">Galerie</span>
+      <h2 class="sec-title reveal up reveal-delay-1">PHOTOS<br>DE CHANTIERS</h2>
+      <div class="divider-line reveal up reveal-delay-2"></div>
+    </div>
+
+    <div class="gallery-grid reveal up reveal-delay-1">
+      <?php
+      $gallery = [
+        'IMG_4201','IMG_1342','IMG_5076','IMG_4527',
+        'IMG_4170','IMG_4194','IMG_5070','IMG_4202',
+        'IMG_4171','IMG_4544','IMG_0295','IMG_4458',
+      ];
+      foreach ($gallery as $idx => $f): ?>
+      <div class="gallery-item" onclick="openLightbox('assets/images/realisations/<?= $f ?>.jpg')">
+        <img src="assets/images/realisations/<?= $f ?>.jpg" alt="Chantier Prefabloc" loading="lazy">
+        <div class="gallery-zoom"><?= icon('search',18) ?></div>
+      </div>
+      <?php endforeach ?>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;">
+  <img id="lightbox-img" src="" alt="" style="max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 0 60px rgba(0,0,0,.8);">
+  <button onclick="closeLightbox()" style="position:fixed;top:20px;right:28px;background:none;border:none;color:#fff;font-size:36px;cursor:pointer;line-height:1;">×</button>
+</div>
+
+<script>
+function openLightbox(src){
+  document.getElementById('lightbox-img').src = src;
+  const lb = document.getElementById('lightbox');
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
+</script>
 
 <section class="cta-banner">
   <div class="container">
