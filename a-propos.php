@@ -43,8 +43,8 @@ include 'includes/header.php';
         </div>
       </div>
       <div class="about-visual reveal right">
-        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&h=520&fit=crop" alt="Chantier gros œuvre Prefabloc" class="about-img-main">
-        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Ingénieurs chantier Prefabloc" class="about-img-secondary">
+        <img src="assets/images/realisations/IMG_4194.jpg" alt="Chantier gros œuvre Prefabloc" class="about-img-main">
+        <img src="assets/images/realisations/IMG_4544.jpg" alt="Ingénieurs chantier Prefabloc" class="about-img-secondary">
         <div class="about-badge">
           <span>15+</span>
           Ans sur<br>le terrain
@@ -159,8 +159,15 @@ include 'includes/header.php';
       <p class="sec-sub reveal up reveal-delay-3">Nos clients sont des promoteurs, des groupes industriels et des établissements publics qui exigent ponctualité, traçabilité et qualité d'exécution conforme aux cahiers des charges les plus stricts.</p>
     </div>
     <div class="clients-grid">
-      <?php foreach (['Groupe OCP','CDG Développement','Addoha','Sonadac','Al Omrane','Lydec','Marsa Maroc','ONCF'] as $i => $c): ?>
-      <div class="client-logo reveal scale reveal-delay-<?= ($i % 4) + 1 ?>"><?= $c ?></div>
+      <?php
+      $clients = [
+        ['Groupe OCP','ocp'],['CDG Développement','cdg'],['Addoha','addoha'],['Sonadac','sonadac'],
+        ['Al Omrane','alomrane'],['Lydec','lydec'],['Marsa Maroc','marsamaroc'],['ONCF','oncf'],
+      ];
+      foreach ($clients as $i => [$name,$file]): ?>
+      <div class="client-logo reveal scale reveal-delay-<?= ($i % 4) + 1 ?>">
+        <img src="assets/images/clients/<?= $file ?>.svg" alt="<?= htmlspecialchars($name) ?>" loading="lazy">
+      </div>
       <?php endforeach ?>
     </div>
   </div>
