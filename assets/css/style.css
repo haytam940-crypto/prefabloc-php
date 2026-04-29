@@ -515,35 +515,70 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    NUMBERS / CHIFFRES
    ══════════════════════════════ */
 .numbers-section {
-  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+  background: linear-gradient(160deg, #060f1e 0%, var(--navy-dark) 50%, #0a1a35 100%);
   padding: 80px 0;
   position: relative; overflow:hidden;
 }
 .numbers-section::before {
   content:'';
   position: absolute; inset:0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,174,239,.06) 0%, transparent 70%);
+  pointer-events:none;
 }
 .numbers-grid {
   display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 0;
+  gap: 1px;
+  background: rgba(255,255,255,.07);
+  border-radius: 20px;
+  overflow: hidden;
   position: relative; z-index:1;
 }
 .number-item {
-  text-align: center; padding: 40px 28px;
-  border-right: 1px solid rgba(255,255,255,.1);
-  transition: background .2s;
+  text-align: center;
+  padding: 48px 32px 40px;
+  background: #071022;
+  border-top: 3px solid transparent;
+  transition: background .25s, border-color .25s;
+  display: flex; flex-direction:column; align-items:center; gap:0;
 }
-.number-item:last-child { border-right:none; }
-.number-item:hover { background: rgba(255,255,255,.04); }
-.number-icon { font-size: 32px; margin-bottom: 12px; }
-.number-icon svg { width:40px; height:40px; color:var(--gold); }
+.number-item:hover {
+  background: rgba(255,255,255,.03);
+  border-top-color: var(--gold);
+}
+.number-icon {
+  width: 68px; height: 68px;
+  background: rgba(0,174,239,.1);
+  border: 1px solid rgba(0,174,239,.2);
+  border-radius: 16px;
+  display: flex; align-items:center; justify-content:center;
+  margin-bottom: 22px;
+  transition: background .25s, border-color .25s;
+}
+.number-item:hover .number-icon {
+  background: rgba(212,175,55,.12);
+  border-color: rgba(212,175,55,.3);
+}
+.number-icon svg { width:34px; height:34px; color: #00AEEF; transition: color .25s; }
+.number-item:hover .number-icon svg { color: var(--gold); }
+.number-row {
+  display: flex; align-items: baseline; justify-content:center; gap:2px;
+  margin-bottom: 10px;
+}
 .number-val {
-  font-size: clamp(40px, 5vw, 60px);
+  font-size: clamp(44px, 5vw, 62px);
   font-weight: 900; color: var(--gold);
-  line-height: 1; margin-bottom: 8px;
+  line-height: 1;
 }
-.number-lbl { font-size: 13px; color: rgba(255,255,255,.65); font-weight: 500; letter-spacing: .5px; text-transform:uppercase; }
+.number-suffix {
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 900; color: var(--gold);
+  line-height: 1;
+}
+.number-lbl {
+  font-size: 12px; color: rgba(255,255,255,.6);
+  font-weight: 600; letter-spacing: 1px; text-transform:uppercase;
+  line-height: 1.4;
+}
 
 /* ══════════════════════════════
    PROJECTS

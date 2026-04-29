@@ -180,23 +180,32 @@ include 'includes/header.php';
   <div class="container">
     <div class="numbers-grid">
       <div class="number-item reveal up">
-        <div class="number-icon"><?= icon('crane',40) ?></div>
-        <div class="number-val" data-counter>120</div>
+        <div class="number-icon"><?= icon('building',40) ?></div>
+        <div class="number-row">
+          <div class="number-val" data-counter>120</div>
+          <div class="number-suffix">+</div>
+        </div>
         <div class="number-lbl">Ouvrages réceptionnés</div>
       </div>
       <div class="number-item reveal up reveal-delay-2">
-        <div class="number-icon"><?= icon('worker',40) ?></div>
-        <div class="number-val" data-counter>180</div>
-        <div class="number-lbl">Techniciens & ouvriers</div>
+        <div class="number-icon"><?= icon('hardhat',40) ?></div>
+        <div class="number-row">
+          <div class="number-val" data-counter>180</div>
+        </div>
+        <div class="number-lbl">Techniciens &amp; ouvriers</div>
       </div>
       <div class="number-item reveal up reveal-delay-3">
-        <div class="number-icon"><?= icon('map',40) ?></div>
-        <div class="number-val" data-counter>8</div>
+        <div class="number-icon"><?= icon('regions',40) ?></div>
+        <div class="number-row">
+          <div class="number-val" data-counter>8</div>
+        </div>
         <div class="number-lbl">Régions du Royaume</div>
       </div>
       <div class="number-item reveal up reveal-delay-4">
-        <div class="number-icon"><?= icon('star',40) ?></div>
-        <div class="number-val">0</div>
+        <div class="number-icon"><?= icon('shield-ok',40) ?></div>
+        <div class="number-row">
+          <div class="number-val">0</div>
+        </div>
         <div class="number-lbl">Malfaçon non résolue</div>
       </div>
     </div>
