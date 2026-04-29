@@ -260,35 +260,7 @@ include 'includes/header.php';
   </div>
 </section>
 
-<!-- ══ CLIENTS ══ -->
-<section class="section section-light">
-  <div class="container">
-    <div class="sec-head">
-      <span class="sec-tag reveal up">Maîtres d'Ouvrage</span>
-      <h2 class="sec-title reveal up reveal-delay-1">ILS NOUS CONFIENT<br>LEURS CHANTIERS</h2>
-      <div class="divider-line reveal up reveal-delay-2"></div>
-      <p class="sec-sub reveal up reveal-delay-3">Promoteurs immobiliers, groupes industriels, collectivités et établissements publics — nous travaillons avec les principaux donneurs d'ordre du Royaume.</p>
-    </div>
-    <div class="clients-grid">
-      <?php
-      $clients = [
-        ['Groupe OCP',       'ocp'],
-        ['CDG Développement','cdg'],
-        ['Addoha',           'addoha'],
-        ['Sonadac',          'sonadac'],
-        ['Al Omrane',        'alomrane'],
-        ['Lydec',            'lydec'],
-        ['Marsa Maroc',      'marsamaroc'],
-        ['ONCF',             'oncf'],
-      ];
-      foreach ($clients as $i => [$name, $file]): ?>
-      <div class="client-logo reveal scale reveal-delay-<?= ($i % 4) + 1 ?>">
-        <img src="assets/images/clients/<?= $file ?>.svg" alt="<?= htmlspecialchars($name) ?>" loading="lazy">
-      </div>
-      <?php endforeach ?>
-    </div>
-  </div>
-</section>
+<?php include 'includes/clients-slider.php'; ?>
 
 <!-- ══ ACTUALITÉS ══ -->
 <section class="section">

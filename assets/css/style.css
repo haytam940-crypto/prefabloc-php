@@ -744,6 +744,76 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /* ══════════════════════════════
+   LOGO MARQUEE SLIDER
+   ══════════════════════════════ */
+.logo-marquee-section {
+  padding: 56px 0;
+  background: var(--offwhite);
+  overflow: hidden;
+}
+.logo-marquee-head {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.logo-marquee-wrap {
+  position: relative;
+  overflow: hidden;
+}
+/* Fade masks left & right */
+.logo-marquee-wrap::before,
+.logo-marquee-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 160px;
+  z-index: 2;
+  pointer-events: none;
+}
+.logo-marquee-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, var(--offwhite), transparent);
+}
+.logo-marquee-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, var(--offwhite), transparent);
+}
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+  animation: logoScroll 32s linear infinite;
+}
+.logo-track:hover {
+  animation-play-state: paused;
+}
+@keyframes logoScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.logo-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 48px;
+  height: 80px;
+  border-right: 1px solid var(--gray-light);
+  flex-shrink: 0;
+}
+.logo-slide img {
+  height: 44px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.55);
+  transition: filter .3s, transform .3s;
+}
+.logo-slide img:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.06);
+}
+
+/* ══════════════════════════════
    NEWS / ACTUALITES
    ══════════════════════════════ */
 .news-grid {

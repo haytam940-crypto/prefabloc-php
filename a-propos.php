@@ -207,28 +207,7 @@ include 'includes/header.php';
   </div>
 </div>
 
-<!-- ── CLIENTS ── -->
-<section class="ap2-section ap2-section-light">
-  <div class="container">
-    <div class="ap2-sec-head">
-      <span class="ap2-tag">Maîtres d'ouvrage</span>
-      <h2 class="ap2-h2-center">ILS NOUS CONFIENT<br>LEURS OUVRAGES</h2>
-      <div class="ap2-divider-center"></div>
-    </div>
-    <div class="clients-grid">
-      <?php
-      $clients = [
-        ['Groupe OCP','ocp'],['CDG Développement','cdg'],['Addoha','addoha'],['Sonadac','sonadac'],
-        ['Al Omrane','alomrane'],['Lydec','lydec'],['Marsa Maroc','marsamaroc'],['ONCF','oncf'],
-      ];
-      foreach ($clients as [$name,$file]): ?>
-      <div class="client-logo">
-        <img src="assets/images/clients/<?= $file ?>.svg" alt="<?= htmlspecialchars($name) ?>" loading="lazy">
-      </div>
-      <?php endforeach ?>
-    </div>
-  </div>
-</section>
+<?php include 'includes/clients-slider.php'; ?>
 
 <section class="cta-banner">
   <div class="container">
