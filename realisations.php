@@ -5,8 +5,8 @@ include 'includes/header.php';
 
 $projects = [
   ['residence-jardins-palmeraie','Résidence Les Jardins','Résidentiel','residential','Réalisé','Marrakech','18 mois','3 800 m²','assets/images/realisations/IMG_1342.jpg'],
-  ['complexe-palm-casablanca','Complexe Palm Résidences','Résidentiel','residential','Réalisé','Casablanca','22 mois','5 200 m²','assets/images/realisations/IMG_4201.jpg'],
-  ['residence-prestige-pool','Résidence Prestige avec Piscine','Résidentiel','residential','Réalisé','Rabat','20 mois','4 400 m²','assets/images/realisations/IMG_4202.jpg'],
+  ['complexe-palm-casablanca','Complexe Palm Résidences','Résidentiel','residential','Réalisé','Casablanca','22 mois','5 200 m²','assets/images/realisations/IMG_5792.jpg'],
+  ['residence-prestige-pool','Résidence Prestige avec Piscine','Résidentiel','residential','Réalisé','Rabat','20 mois','4 400 m²','assets/images/realisations/IMG_4203.jpg'],
   ['immeuble-belveder','Immeuble Belvédère R+7','Résidentiel','residential','En cours','Casablanca','24 mois','4 800 m²','assets/images/realisations/IMG_4170.jpg'],
   ['immeuble-structure-ba','Immeuble R+5 Structure BA','Résidentiel','residential','En cours','Casablanca','26 mois','3 600 m²','assets/images/realisations/IMG_4171.jpg'],
   ['facade-residence-moderne','Résidence Moderne Façade Mixte','Résidentiel','residential','Réalisé','Rabat','16 mois','2 900 m²','assets/images/realisations/IMG_4194.jpg'],
@@ -32,7 +32,7 @@ $sizes = ['large','small','small','small','large','small','small','small','large
 <!-- Hero éditorial -->
 <div class="rl-hero">
   <div class="rl-hero-bg">
-    <img src="assets/images/realisations/IMG_4201.jpg" alt="Réalisations Prefabloc">
+    <img src="assets/images/realisations/IMG_9870.jpg" alt="Réalisations Prefabloc">
     <div class="rl-hero-overlay"></div>
   </div>
   <div class="container rl-hero-inner">

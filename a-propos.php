@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <!-- ── HERO photo pleine largeur ── -->
 <div class="ap2-hero">
-  <img src="assets/images/realisations/IMG_4201.jpg" alt="Chantiers Prefabloc" class="ap2-hero-img">
+  <img src="assets/images/realisations/IMG_5792.jpg" alt="Chantiers Prefabloc" class="ap2-hero-img">
   <div class="ap2-hero-overlay"></div>
   <div class="container ap2-hero-inner">
     <div class="breadcrumb"><a href="index.php">Accueil</a><span>›</span><span>À propos</span></div>
@@ -20,7 +20,7 @@ include 'includes/header.php';
 <section class="ap2-section">
   <div class="ap2-split">
     <div class="ap2-split-photo">
-      <img src="assets/images/realisations/IMG_4202.jpg" alt="Résidence Prefabloc">
+      <img src="assets/images/realisations/IMG_0329.jpg" alt="Résidence Prefabloc">
       <div class="ap2-split-badge">
         <div class="ap2-badge-num">15+</div>
         <div class="ap2-badge-lbl">Ans sur<br>le terrain</div>
@@ -137,7 +137,7 @@ include 'includes/header.php';
     <div class="ap2-team">
       <div class="ap2-team-card">
         <div class="ap2-team-photo ap2-team-photo-1">
-          <img src="assets/images/realisations/IMG_4527.jpg" alt="Amine Benali">
+          <img src="assets/images/realisations/IMG_4195.jpg" alt="Amine Benali">
           <div class="ap2-team-photo-overlay"></div>
         </div>
         <div class="ap2-team-info">
@@ -149,7 +149,7 @@ include 'includes/header.php';
       </div>
       <div class="ap2-team-card">
         <div class="ap2-team-photo ap2-team-photo-2">
-          <img src="assets/images/realisations/IMG_5076.jpg" alt="Sara Moussaoui">
+          <img src="assets/images/realisations/IMG_5078.jpg" alt="Sara Moussaoui">
           <div class="ap2-team-photo-overlay"></div>
         </div>
         <div class="ap2-team-info">
@@ -161,7 +161,7 @@ include 'includes/header.php';
       </div>
       <div class="ap2-team-card">
         <div class="ap2-team-photo ap2-team-photo-3">
-          <img src="assets/images/realisations/IMG_4194.jpg" alt="Youssef Hajji">
+          <img src="assets/images/realisations/IMG_5517_2.jpg" alt="Youssef Hajji">
           <div class="ap2-team-photo-overlay"></div>
         </div>
         <div class="ap2-team-info">

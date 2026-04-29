@@ -129,8 +129,8 @@ include 'includes/header.php';
         </div>
       </div>
       <div class="about-visual reveal right">
-        <img src="assets/images/realisations/IMG_4201.jpg" alt="Chantier gros œuvre Prefabloc" class="about-img-main">
-        <img src="assets/images/realisations/IMG_4170.jpg" alt="Ingénieurs terrain Prefabloc" class="about-img-secondary">
+        <img src="assets/images/realisations/IMG_9870.jpg" alt="Chantier gros œuvre Prefabloc" class="about-img-main">
+        <img src="assets/images/realisations/IMG_5077.jpg" alt="Ingénieurs terrain Prefabloc" class="about-img-secondary">
         <div class="about-badge">
           <span>15+</span>
           Ans sur<br>le terrain
@@ -225,11 +225,11 @@ include 'includes/header.php';
       <?php
       $featured = [
         ['residence-jardins-palmeraie','Résidence Les Jardins','Résidentiel','residential','Réalisé','Marrakech','18 mois','assets/images/realisations/IMG_1342.jpg'],
-        ['complexe-palm-casablanca','Complexe Palm Résidences','Résidentiel','residential','Réalisé','Casablanca','22 mois','assets/images/realisations/IMG_4202.jpg'],
-        ['immeuble-belveder','Immeuble Résidentiel Belvédère','Résidentiel','residential','En cours','Casablanca','24 mois','assets/images/realisations/IMG_4171.jpg'],
-        ['gros-oeuvre-structure','Gros Œuvre — Structure Poteaux-Dalles','Résidentiel','residential','En cours','Tanger','12 mois','assets/images/realisations/IMG_0295.jpg'],
-        ['chantier-structure-marrakech','Chantier Structure Marrakech','Résidentiel','residential','En cours','Marrakech','15 mois','assets/images/realisations/IMG_4458.jpg'],
-        ['residence-al-waha','Résidence Al Waha','Résidentiel','residential','Réalisé','Mohammedia','18 mois','assets/images/realisations/IMG_5076.jpg'],
+        ['complexe-palm-casablanca','Complexe Palm Résidences','Résidentiel','residential','Réalisé','Casablanca','22 mois','assets/images/realisations/IMG_5792.jpg'],
+        ['immeuble-belveder','Immeuble Résidentiel Belvédère','Résidentiel','residential','En cours','Casablanca','24 mois','assets/images/realisations/IMG_5516.jpg'],
+        ['gros-oeuvre-structure','Gros Œuvre — Structure Poteaux-Dalles','Résidentiel','residential','En cours','Tanger','12 mois','assets/images/realisations/IMG_0328.jpg'],
+        ['chantier-structure-marrakech','Chantier Structure Marrakech','Résidentiel','residential','En cours','Marrakech','15 mois','assets/images/realisations/IMG_5384.jpg'],
+        ['residence-al-waha','Résidence Al Waha','Résidentiel','residential','Réalisé','Mohammedia','18 mois','assets/images/realisations/IMG_5295.jpg'],
       ];
       foreach ($featured as $i => [$slug,$title,$cat,$catClass,$status,$city,$dur,$img]):
         $statusClass = $status === 'Réalisé' ? 'badge-status-done' : 'badge-status-ongoing';
@@ -301,9 +301,9 @@ include 'includes/header.php';
     <div class="news-grid">
       <?php
       $news = [
-        ['Nouveau marché','15 Jan. 2025','ADJUDICATION D\'UN IMMEUBLE R+7 À RABAT-AGDAL','Prefabloc a été retenu pour la construction d\'un immeuble résidentiel de 42 logements à Agdal. Le chantier débute en mars 2025, avec une structure en voiles et poteaux béton armé sur 3 niveaux de sous-sol.','assets/images/realisations/IMG_4527.jpg'],
-        ['Certification','08 Jan. 2025','RENOUVELLEMENT ISO 9001 : NOTRE SMQ VALIDÉ POUR 3 ANS','Notre Système de Management de la Qualité a passé l\'audit de renouvellement avec zéro non-conformité majeure. Ce résultat confirme la maîtrise de nos processus de contrôle du béton, de traçabilité des matériaux et de gestion documentaire.','assets/images/realisations/IMG_5070.jpg'],
-        ['Équipement','22 Déc. 2024','ACQUISITION D\'UNE GRUE À TOUR 280 EC-H LIEBHERR','Pour répondre à la montée en puissance de nos chantiers R+8 et plus, nous avons investi dans une grue à tour à montage rapide de 280 mètres-tonnes, portant notre parc de levage à 6 unités opérationnelles.','assets/images/realisations/IMG_4194.jpg'],
+        ['Nouveau marché','15 Jan. 2025','ADJUDICATION D\'UN IMMEUBLE R+7 À RABAT-AGDAL','Prefabloc a été retenu pour la construction d\'un immeuble résidentiel de 42 logements à Agdal. Le chantier débute en mars 2025, avec une structure en voiles et poteaux béton armé sur 3 niveaux de sous-sol.','assets/images/realisations/IMG_4554.jpg'],
+        ['Certification','08 Jan. 2025','RENOUVELLEMENT ISO 9001 : NOTRE SMQ VALIDÉ POUR 3 ANS','Notre Système de Management de la Qualité a passé l\'audit de renouvellement avec zéro non-conformité majeure. Ce résultat confirme la maîtrise de nos processus de contrôle du béton, de traçabilité des matériaux et de gestion documentaire.','assets/images/realisations/IMG_5070_2.jpg'],
+        ['Équipement','22 Déc. 2024','ACQUISITION D\'UNE GRUE À TOUR 280 EC-H LIEBHERR','Pour répondre à la montée en puissance de nos chantiers R+8 et plus, nous avons investi dans une grue à tour à montage rapide de 280 mètres-tonnes, portant notre parc de levage à 6 unités opérationnelles.','assets/images/realisations/IMG_0120.jpg'],
       ];
       foreach ($news as $i => [$cat,$date,$title,$excerpt,$img]): ?>
       <div class="news-card reveal up reveal-delay-<?= $i + 1 ?>">

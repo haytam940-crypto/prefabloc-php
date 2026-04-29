@@ -10,7 +10,7 @@ $services = [
     'icon'  => 'home',
     'tag'   => 'Logement & Habitat',
     'title' => 'Construction Résidentielle',
-    'img'   => 'assets/images/realisations/IMG_5076.jpg',
+    'img'   => 'assets/images/realisations/IMG_5071.jpg',
     'desc1' => 'De la villa individuelle à l\'immeuble R+10, notre département résidentiel prend en charge l\'ensemble des corps d\'état : terrassement et fouilles, fondations semelles filantes ou radier général, coulage des voiles et poteaux en béton armé dosé à 350 kg/m³, planchers hourdis, maçonnerie briques et finitions intérieures.',
     'desc2' => 'Notre bureau d\'études calcule les armatures conformément au BAEL 91 et au RPS 2011. Chaque lot est suivi par un conducteur de travaux certifié et un laborantin béton qui prélève les éprouvettes à la sortie du malaxeur.',
     'feats' => ['Fouilles et fondations profondes','Voiles BA calculés RPS 2011','Planchers hourdis et dalles pleines','Maçonnerie briques et parpaings','Isolation thermique RTCM','Menuiseries PVC/ALU et revêtements'],
@@ -21,7 +21,7 @@ $services = [
     'icon'  => 'office',
     'tag'   => 'Bureaux & Commerce',
     'title' => 'Commercial, Tertiaire & Hôtellerie',
-    'img'   => 'assets/images/realisations/IMG_4544.jpg',
+    'img'   => 'assets/images/realisations/IMG_0327.jpg',
     'desc1' => 'Bureaux, hôtels, centres commerciaux et cliniques imposent des contraintes spécifiques : grandes portées, charges d\'exploitation élevées et second œuvre de représentation. Prefabloc maîtrise les structures mixtes acier-béton, les fondations sur radier et les façades vitrées type rideau.',
     'desc2' => 'Nous intégrons dès la phase études les prescriptions CVC, électricité CFO/CFA, plomberie et sprinklers afin d\'éviter les reprises coûteuses. Nos équipes de second œuvre réalisent les cloisons sèches Knauf, faux plafonds suspendus et peintures époxy.',
     'feats' => ['Structures grandes portées (jusqu\'à 24 m)','Radiers sur sol compressible','Façades rideaux aluminium','Cloisons sèches et faux plafonds T15','Coordination CVC et fluides','Finitions marbre et pierre naturelle'],
@@ -32,7 +32,7 @@ $services = [
     'icon'  => 'factory',
     'tag'   => 'Industrie & Logistique',
     'title' => 'Bâtiments Industriels & Logistiques',
-    'img'   => 'assets/images/realisations/IMG_0295.jpg',
+    'img'   => 'assets/images/realisations/IMG_4203.jpg',
     'desc1' => 'Entrepôts, usines et plateformes cross-dock : nos ingénieurs structure dimensionnent des charpentes métalliques HEA/HEB pouvant atteindre 40 m de portée libre, sur fondations profondes adaptées à chaque nature de sol (pieux battus, micropieux ou puits marocains).',
     'desc2' => 'Nous réalisons les dallages industriels au laser screed, les fosses de maintenance, les quais de chargement et les réseaux incendie sprinklers conformes à la réglementation des zones industrielles et franches.',
     'feats' => ['Charpentes métalliques jusqu\'à 40 m','Dallages industriels Q4-Q5 laser screed','Fosses de décantation et bassins','Quais de chargement hydrauliques','Couvertures bac acier isolés','Réseaux incendie sprinklers certifiés'],
@@ -43,7 +43,7 @@ $services = [
     'icon'  => 'road',
     'tag'   => 'VRD & Infrastructure',
     'title' => 'Travaux Publics & Infrastructure',
-    'img'   => 'assets/images/realisations/IMG_4458.jpg',
+    'img'   => 'assets/images/realisations/IMG_5384.jpg',
     'desc1' => 'Notre division infrastructure répond aux appels d\'offres des communes, agences urbaines et opérateurs délégués. Terrassements mécanisés, réseaux d\'assainissement en béton armé centrifugé (DN 400 à DN 1200), chaussées en bicouche et béton bitumineux, ouvrages de franchissement.',
     'desc2' => 'Nous travaillons selon les prescriptions du CCDG Maroc et les normes NM pour les matériaux de voirie. Chaque lot fait l\'objet d\'un dossier d\'exécution, fiches de contrôle et rapport d\'autocontrôle remis à la réception.',
     'feats' => ['Terrassements mécanisés','Assainissement EU/EP DN 300 à 1200','Chaussées bicouche et BBSG','Trottoirs, bordures, mobilier urbain','Éclairage public LED','Ponts cadres et dalots BA'],
@@ -54,7 +54,7 @@ $services = [
     'icon'  => 'wrench',
     'tag'   => 'Rénovation & Restauration',
     'title' => 'Rénovation, Réhabilitation & Renforcement',
-    'img'   => 'assets/images/realisations/IMG_4194.jpg',
+    'img'   => 'assets/images/realisations/IMG_5295.jpg',
     'desc1' => 'Nous intervenons sur le bâti existant avec des techniques de diagnostic et de renforcement : carottage et sondage des structures, injection de résines époxy dans les fissures structurelles, chemisage de poteaux par béton projeté, ajout de voiles de contreventement et mise aux normes parasismiques RPS 2011.',
     'desc2' => 'Pour les bâtiments historiques et riads, nos artisans maîtrisent les techniques traditionnelles : pose de zelliges sur mortier de chaux, taille du marbre Khenifra, moulage du stuc Tadelakt et menuiserie bois de cèdre — dans le respect de l\'authenticité architecturale.',
     'feats' => ['Diagnostic structurel et sondages','Injection époxy et agrafage fissures','Chemisage poteaux et renforts BA','Mise aux normes RPS 2011','Traitement humidité et remontées','Restauration zellige, stuc et gébs'],
@@ -64,7 +64,7 @@ $services = [
 
 <!-- ── HERO ── -->
 <div class="sv2-hero">
-  <img src="assets/images/realisations/IMG_4170.jpg" alt="Chantier Prefabloc" class="sv2-hero-img">
+  <img src="assets/images/realisations/IMG_5517.jpg" alt="Chantier Prefabloc" class="sv2-hero-img">
   <div class="sv2-hero-overlay"></div>
   <div class="container sv2-hero-inner">
     <div class="breadcrumb"><a href="index.php">Accueil</a><span>›</span><span>Services</span></div>

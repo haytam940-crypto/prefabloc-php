@@ -1,17 +1,17 @@
 <?php
 $realPhotos = [
-  'residence-jardins-palmeraie' => ['IMG_1342','IMG_4201','IMG_4202'],
-  'complexe-palm-casablanca'    => ['IMG_4201','IMG_4202','IMG_5076'],
-  'residence-prestige-pool'     => ['IMG_4202','IMG_1342','IMG_4527'],
-  'immeuble-belveder'           => ['IMG_4170','IMG_4171','IMG_4544'],
-  'immeuble-structure-ba'       => ['IMG_4171','IMG_4170','IMG_0295'],
-  'facade-residence-moderne'    => ['IMG_4194','IMG_4544','IMG_5076'],
-  'villa-prestige-piscine'      => ['IMG_4527','IMG_1342','IMG_4202'],
-  'lotissement-maisons'         => ['IMG_5070','IMG_5076','IMG_4194'],
-  'residence-al-waha'           => ['IMG_5076','IMG_5070','IMG_4201'],
-  'immeuble-commerces-rdc'      => ['IMG_4544','IMG_4545','IMG_4171'],
-  'gros-oeuvre-structure'       => ['IMG_0295','IMG_4846','IMG_4459'],
-  'chantier-structure-marrakech'=> ['IMG_4458','IMG_4471','IMG_4549'],
+  'residence-jardins-palmeraie' => ['IMG_1342',  'IMG_5077',   'IMG_0327'],
+  'complexe-palm-casablanca'    => ['IMG_5792',  'IMG_5517',   'IMG_4201'],
+  'residence-prestige-pool'     => ['IMG_4203',  'IMG_5517_2', 'IMG_4202'],
+  'immeuble-belveder'           => ['IMG_4170',  'IMG_5516',   'IMG_5295'],
+  'immeuble-structure-ba'       => ['IMG_4171',  'IMG_5384',   'IMG_0328'],
+  'facade-residence-moderne'    => ['IMG_4194',  'IMG_5078',   'IMG_5070_2'],
+  'villa-prestige-piscine'      => ['IMG_4527',  'IMG_5071',   'IMG_9870'],
+  'lotissement-maisons'         => ['IMG_5070',  'IMG_4195',   'IMG_5791'],
+  'residence-al-waha'           => ['IMG_5076',  'IMG_4554',   'IMG_0120'],
+  'immeuble-commerces-rdc'      => ['IMG_4544',  'IMG_4545',   'IMG_0329'],
+  'gros-oeuvre-structure'       => ['IMG_0295',  'IMG_4846',   'IMG_4459'],
+  'chantier-structure-marrakech'=> ['IMG_4458',  'IMG_4471',   'IMG_4549'],
 ];
 
 $projects = [

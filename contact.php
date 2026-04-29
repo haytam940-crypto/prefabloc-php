@@ -109,7 +109,7 @@ include 'includes/header.php';
 
         <!-- Photo réalisation -->
         <div class="contact-photo-card">
-          <img src="assets/images/realisations/IMG_4201.jpg" alt="Réalisation Prefabloc" class="contact-photo">
+          <img src="assets/images/realisations/IMG_5791.jpg" alt="Réalisation Prefabloc" class="contact-photo">
           <div class="contact-photo-overlay">
             <div class="contact-photo-stat"><span class="cps-val">120+</span><span class="cps-lbl">Ouvrages livrés</span></div>
             <div class="contact-photo-stat"><span class="cps-val">15</span><span class="cps-lbl">Ans d'expérience</span></div>
@@ -190,11 +190,11 @@ include 'includes/header.php';
 
 <!-- Réalisations mini-bande -->
 <div class="contact-ref-strip">
-  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_1342.jpg" alt="Réf 1"></div>
-  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_5076.jpg" alt="Réf 2"></div>
-  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_4194.jpg" alt="Réf 3"></div>
-  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_4527.jpg" alt="Réf 4"></div>
-  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_4202.jpg" alt="Réf 5"></div>
+  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_5516.jpg" alt="Réf 1"></div>
+  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_5070_2.jpg" alt="Réf 2"></div>
+  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_0120.jpg" alt="Réf 3"></div>
+  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_4554.jpg" alt="Réf 4"></div>
+  <div class="contact-ref-item"><img src="assets/images/realisations/IMG_4203.jpg" alt="Réf 5"></div>
   <div class="contact-ref-text">
     <span>+ 120 chantiers réalisés au Maroc</span>
     <a href="realisations.php">Voir le portfolio →</a>
