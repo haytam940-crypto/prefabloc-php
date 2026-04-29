@@ -1,6 +1,6 @@
 <?php
-$meta_title = 'Prefabloc — Entreprise Générale de BTP au Maroc';
-$meta_desc  = 'Prefabloc, entreprise générale de construction au Maroc depuis 2009. Gros œuvre, second œuvre, génie civil, travaux publics — plus de 120 ouvrages livrés dans 8 régions du Royaume.';
+$meta_title = 'Prefabloc — Constructeur de référence au Maroc depuis 2009';
+$meta_desc  = 'Gros œuvre, charpente métallique, VRD et rénovation — Prefabloc, entreprise générale de BTP certifiée ISO 9001, livre plus de 120 ouvrages dans 8 régions du Maroc. Devis sous 48h.';
 include 'includes/header.php';
 ?>
 
@@ -16,13 +16,13 @@ include 'includes/header.php';
       <div class="hero-text">
         <div class="hero-tag">
           <span class="dot"></span>
-          Entreprise Générale de BTP — Agréée FNBTP depuis 2009
+          Agréé FNBTP · ISO 9001 · 120+ Ouvrages Réceptionnés
         </div>
-        <h1>DU GROS ŒUVRE<br>À LA <span class="accent">LIVRAISON</span><br>CLÉ EN MAIN</h1>
-        <p class="hero-sub">Prefabloc prend en charge l'intégralité de vos chantiers : fondations, structure béton armé, charpente métallique, second œuvre et finitions — avec une maîtrise totale des délais et des coûts dans 8 régions du Maroc.</p>
+        <h1>CONSTRUIRE JUSTE,<br>LIVRER À <span class="accent">TEMPS</span></h1>
+        <p class="hero-sub">Prefabloc — entreprise générale de BTP fondée à Casablanca en 2009. Fondations, structure béton armé, charpente, second œuvre et finitions : chaque phase est assurée par nos propres ingénieurs et nos propres équipes terrain, dans 8 régions du Maroc.</p>
         <div class="hero-btns">
-          <a href="realisations.php" class="btn btn-gold">Consulter notre portfolio →</a>
-          <a href="contact.php" class="btn btn-outline-white">Obtenir un devis sous 48h</a>
+          <a href="realisations.php" class="btn btn-gold">Voir nos réalisations →</a>
+          <a href="contact.php" class="btn btn-outline-white">Devis gratuit sous 48h</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -64,13 +64,13 @@ include 'includes/header.php';
       <div class="hero-bottom-item">
         <div>
           <div class="hero-bottom-num">8</div>
-          <div class="hero-bottom-lbl">Régions du Royaume</div>
+          <div class="hero-bottom-lbl">Régions couvertes</div>
         </div>
       </div>
       <div class="hero-bottom-item">
         <div>
-          <div class="hero-bottom-num">0</div>
-          <div class="hero-bottom-lbl">Retard de livraison</div>
+          <div class="hero-bottom-num">48h</div>
+          <div class="hero-bottom-lbl">Délai de remise d'offre</div>
         </div>
       </div>
       <div class="hero-bottom-item">
@@ -87,7 +87,7 @@ include 'includes/header.php';
 <div class="ticker">
   <div class="ticker-track">
     <?php
-    $items = ['Gros Œuvre & Structure','Béton Armé & Coffrage','Charpente Métallique','VRD & Assainissement','Second Œuvre Complet','Contrôle Qualité NM','Management de Chantier','Génie Civil & Infrastructure'];
+    $items = ['Gros Œuvre & Béton Armé','Charpente Métallique','VRD & Réseaux','Rénovation Structurelle','Bureau d\'Études Intégré','Certification ISO 9001','Terrassement & Fondations','Second Œuvre Tous Corps d\'État','RPS 2011 · BAEL 91','Délai Garanti Contractuellement'];
     $all = array_merge($items, $items);
     foreach ($all as $item): ?>
     <div class="ticker-item"><span class="dot">◆</span><?= $item ?></div>
@@ -100,32 +100,32 @@ include 'includes/header.php';
   <div class="container">
     <div class="about-grid">
       <div class="about-text">
-        <span class="sec-tag reveal up">Notre Identité</span>
-        <h2 class="sec-title reveal up reveal-delay-1">QUINZE ANS DE<br>CHANTIERS, DE BÉTON<br>ET DE CONFIANCE</h2>
+        <span class="sec-tag reveal up">Qui sommes-nous</span>
+        <h2 class="sec-title reveal up reveal-delay-1">UN CONSTRUCTEUR<br>QUI ENGAGE<br>SA SIGNATURE</h2>
         <div class="divider-line reveal up reveal-delay-2"></div>
-        <p class="about-lead reveal up reveal-delay-2">Prefabloc est une entreprise générale de BTP fondée en 2009 à Casablanca. Nous intervenons sur toutes les phases d'un projet : études géotechniques, fondations, structure porteuse, charpente, second œuvre et réception de l'ouvrage.</p>
-        <p class="about-para reveal up reveal-delay-3">Notre parc matériel propre — grues à tour, coffrages tunnels, pelles hydrauliques et bétonnières volumétriques — nous permet de maîtriser les délais sans sous-traitance incontrôlée. Chaque chantier est encadré par un ingénieur génie civil et un conducteur de travaux expérimentés.</p>
-        <p class="about-para reveal up reveal-delay-3">Agréés auprès de la FNBTP, certifiés ISO 9001 et référencés par les principaux donneurs d'ordre publics et privés du Royaume, nous avons bâti notre réputation sur une seule règle : livrer ce qui est promis, dans les délais et selon les règles de l'art.</p>
+        <p class="about-lead reveal up reveal-delay-2">Depuis 2009, Prefabloc construit ce qu'il promet. Fondée par des ingénieurs génie civil diplômés de l'EHTP, notre entreprise prend en charge chaque phase de votre projet — de la fouille jusqu'aux finitions — avec ses propres équipes. Aucun lot stratégique n'est sous-traité.</p>
+        <p class="about-para reveal up reveal-delay-3">Notre bureau d'études interne calcule les armatures selon le BAEL 91 et le RPS 2011. Nos laborantins prélèvent des éprouvettes à chaque gâchée critique. Notre parc de six grues à tour et quatre coffrages tunnels garantit les cadences sans dépendance extérieure.</p>
+        <p class="about-para reveal up reveal-delay-3">Agréés FNBTP classe T3, certifiés ISO 9001 version 2015, et référencés par Al Omrane, CDG Développement, ONEE et OCP — nous avons bâti notre réputation sur une seule règle : tenir nos engagements, sans exception.</p>
         <div class="about-stats">
           <div class="about-stat reveal scale reveal-delay-2">
             <div class="about-stat-num" data-counter>120</div>
-            <div class="about-stat-lbl">Ouvrages livrés</div>
+            <div class="about-stat-lbl">Ouvrages réceptionnés</div>
           </div>
           <div class="about-stat reveal scale reveal-delay-3">
             <div class="about-stat-num" data-counter>180</div>
-            <div class="about-stat-lbl">Collaborateurs</div>
+            <div class="about-stat-lbl">Permanents terrain</div>
           </div>
           <div class="about-stat reveal scale reveal-delay-4">
             <div class="about-stat-num" data-counter>15</div>
-            <div class="about-stat-lbl">Ans d'expérience</div>
+            <div class="about-stat-lbl">Années de métier</div>
           </div>
           <div class="about-stat reveal scale reveal-delay-5">
             <div class="about-stat-num" data-counter>8</div>
-            <div class="about-stat-lbl">Régions couvertes</div>
+            <div class="about-stat-lbl">Régions actives</div>
           </div>
         </div>
         <div style="margin-top:28px" class="reveal up reveal-delay-4">
-          <a href="a-propos.php" class="btn btn-primary">Notre histoire et notre équipe →</a>
+          <a href="a-propos.php" class="btn btn-primary">Découvrir notre histoire →</a>
         </div>
       </div>
       <div class="about-visual reveal right">
@@ -144,20 +144,20 @@ include 'includes/header.php';
 <section class="section section-light">
   <div class="container">
     <div class="sec-head">
-      <span class="sec-tag reveal up">Nos Métiers</span>
-      <h2 class="sec-title reveal up reveal-delay-1">DU TERRASSEMENT<br>À LA RÉCEPTION</h2>
+      <span class="sec-tag reveal up">Nos Domaines</span>
+      <h2 class="sec-title reveal up reveal-delay-1">6 MÉTIERS,<br>1 SEUL INTERLOCUTEUR</h2>
       <div class="divider-line reveal up reveal-delay-2"></div>
-      <p class="sec-sub reveal up reveal-delay-3">Six domaines de compétences techniques couvrant l'intégralité du cycle de vie d'un projet de construction au Maroc.</p>
+      <p class="sec-sub reveal up reveal-delay-3">De la fouille au second œuvre, Prefabloc couvre l'intégralité du cycle de vie d'un projet de construction — sans lot sous-traité, sans surprise en cours de chantier.</p>
     </div>
     <div class="services-grid">
       <?php
       $services = [
-        [icon('home',28),'Construction Résidentielle','Gros œuvre','Villas R+1, immeubles R+10+ et résidences fermées — fondations, voiles BA, dalles, façades et finitions maîtrisées en interne.',['Fondations superficielles et profondes','Voiles et poteaux béton armé','Maçonnerie hourdis et briques','Isolation thermique et acoustique','Ravalement et enduits de façade','Aménagements intérieurs haut de gamme']],
-        [icon('office',28),'Commercial & Tertiaire','Structure mixte','Immeubles de bureaux, hôtels, centres commerciaux — structure poteau-poutre, rideau de verre, revêtements de représentation.',['Structures mixtes acier-béton','Facades rideaux et vitrages','Faux plafonds et cloisons sèches','CVC et fluides spéciaux','Electricité courants forts et faibles','Certification HQE & efficacité énergétique']],
-        [icon('factory',28),'Industriel & Logistique','Charpente métallique','Hangars, entrepôts frigorifiques, unités de fabrication — charpentes métalliques, dallages industriels et réseaux techniques.',['Charpentes métalliques lourdes','Dallages industriels Q4-Q5','Fosses et quais de chargement','Réseaux sprinklers incendie','Ponts roulants et rails','Bardages et couvertures isolantes']],
-        [icon('road',28),'Travaux Publics','Marchés publics','Voirie urbaine, réseaux d\'assainissement, ponts et tranchées couvertes pour collectivités territoriales et ONEE.',['Terrassements et déblais/remblais','Réseaux VRD et assainissement','Chaussées bitumineuses et béton','Ponts et ouvrages d\'art','Éclairage public LED basse consommation','Signalisation horizontale et verticale']],
-        [icon('wrench',28),'Rénovation & Mise aux normes','Réhabilitation','Remise à neuf tous corps d\'état, renforcement structurel, mise aux normes parasismiques et accessibilité PMR.',['Diagnostic structurel et sondages','Injection et consolidation béton','Ravalement et traitement humidité','Mise aux normes RPS 2011','Extension et surélévation','Restauration patrimoine bâti']],
-        [icon('blueprint',28),'Bureau d\'Études Intégré','MOE & OPC','Conception architecturale et technique, suivi d\'exécution et coordination OPC pour piloter vos projets de A à Z.',['Plans d\'exécution béton armé','Notes de calcul BAEL-91 et RPS','Planning Gantt et suivi avancement','Coordination tous corps d\'état','Contrôle conformité plans vs réalisé','Assistance lors des réceptions']],
+        [icon('home',28),'Construction Résidentielle','Logement','Villas, immeubles R+5 à R+12, résidences gardées — la totalité des corps d\'état exécutée en interne, du terrassement aux finitions.',['Fondations sur sols complexes','Voiles BA dosage 350 kg/m³','Planchers hourdis et dalles pleines','Isolation thermique RTCM','Façades et menuiseries PVC/ALU','Finitions carrelage, peinture, sanitaires']],
+        [icon('office',28),'Commercial & Tertiaire','Bureaux & Hôtels','Grandes portées, charges élevées, finitions de représentation — hôtels, cliniques, centres commerciaux, immeubles de bureaux.',['Structures poteaux-poutres jusqu\'à 24 m','Radiers sur sol compressible','Façades rideaux aluminium','Cloisons Knauf et faux plafonds','Coordination CVC et fluides','Revêtements marbre et pierre naturelle']],
+        [icon('factory',28),'Industriel & Logistique','Charpente métallique','Entrepôts, usines, plateformes cross-dock — charpentes HEA/HEB jusqu\'à 40 m de portée libre sur fondations adaptées à chaque sol.',['Charpentes métalliques HEA/HEB','Dallages industriels Q4-Q5 laser screed','Fosses de décantation et bassins','Quais de chargement hydrauliques','Couvertures bac acier isolées','Sprinklers et sécurité incendie']],
+        [icon('road',28),'Travaux Publics & VRD','Infrastructure','Voirie, assainissement, ouvrages de franchissement — nous répondons aux appels d\'offres des communes, agences urbaines et ONEE.',['Terrassements mécanisés lourds','Assainissement DN 300 à 1 200','Chaussées BBSG et béton bitumineux','Mobilier urbain et éclairage LED','Ponts cadres et dalots BA','Rapport d\'autocontrôle CCDG Maroc']],
+        [icon('wrench',28),'Rénovation & Renforcement','Réhabilitation','Diagnostic, injection époxy, chemisage béton projeté, mise aux normes RPS 2011 — nous intervenons sur tout type de bâti existant.',['Diagnostic structurel et carottages','Injection résines et agrafage fissures','Chemisage poteaux béton projeté','Mise aux normes parasismiques','Traitement humidité et remontées capillaires','Restauration zellige, stuc et cèdre']],
+        [icon('blueprint',28),'Bureau d\'Études Intégré','MOE & OPC','Plans d\'exécution, notes de calcul BAEL-91, planning hebdomadaire et coordination TCE — un pilotage complet de A à Z.',['Plans de coffrage et d\'armatures','Calcul BAEL-91 et RPS 2011','Planning Gantt et reporting hebdo','Coordination tous corps d\'état','Contrôle conformité plans/réalisé','Assistance réception maître d\'ouvrage']],
       ];
       foreach ($services as $i => [$icon,$title,$badge,$desc,$feats]): ?>
       <div class="service-card reveal scale reveal-delay-<?= ($i % 3) + 1 ?>">
@@ -192,21 +192,21 @@ include 'includes/header.php';
         <div class="number-row">
           <div class="number-val" data-counter>180</div>
         </div>
-        <div class="number-lbl">Techniciens &amp; ouvriers</div>
+        <div class="number-lbl">Permanents sur nos chantiers</div>
       </div>
       <div class="number-item reveal up reveal-delay-3">
         <div class="number-icon"><?= icon('regions',40) ?></div>
         <div class="number-row">
           <div class="number-val" data-counter>8</div>
         </div>
-        <div class="number-lbl">Régions du Royaume</div>
+        <div class="number-lbl">Régions d'intervention actives</div>
       </div>
       <div class="number-item reveal up reveal-delay-4">
         <div class="number-icon"><?= icon('shield-ok',40) ?></div>
         <div class="number-row">
           <div class="number-val">0</div>
         </div>
-        <div class="number-lbl">Malfaçon non résolue</div>
+        <div class="number-lbl">Malfaçon laissée sans réponse</div>
       </div>
     </div>
   </div>
@@ -216,10 +216,10 @@ include 'includes/header.php';
 <section class="section">
   <div class="container">
     <div class="sec-head">
-      <span class="sec-tag reveal up">Références</span>
-      <h2 class="sec-title reveal up reveal-delay-1">QUELQUES-UNS<br>DE NOS CHANTIERS</h2>
+      <span class="sec-tag reveal up">Portfolio</span>
+      <h2 class="sec-title reveal up reveal-delay-1">DES CHANTIERS QUI<br>PARLENT D'EUX-MÊMES</h2>
       <div class="divider-line reveal up reveal-delay-2"></div>
-      <p class="sec-sub reveal up reveal-delay-3">Des projets variés — résidentiel, tertiaire, industriel, infrastructure — qui illustrent l'étendue de notre savoir-faire constructif.</p>
+      <p class="sec-sub reveal up reveal-delay-3">Résidentiel, tertiaire, industriel, infrastructure — une sélection représentative de nos 120+ réalisations à travers le Royaume.</p>
     </div>
     <div class="projects-grid">
       <?php
@@ -255,7 +255,7 @@ include 'includes/header.php';
       <?php endforeach ?>
     </div>
     <div style="text-align:center;margin-top:40px" class="reveal up">
-      <a href="realisations.php" class="btn btn-primary">Tout notre portfolio →</a>
+      <a href="realisations.php" class="btn btn-primary">Explorer tout notre portfolio →</a>
     </div>
   </div>
 </section>
@@ -266,16 +266,16 @@ include 'includes/header.php';
 <section class="section">
   <div class="container">
     <div class="sec-head">
-      <span class="sec-tag reveal up">Actualités Chantier</span>
-      <h2 class="sec-title reveal up reveal-delay-1">CE QUI SE PASSE<br>CHEZ PREFABLOC</h2>
+      <span class="sec-tag reveal up">Vie de l'entreprise</span>
+      <h2 class="sec-title reveal up reveal-delay-1">DERNIÈRES NOUVELLES<br>DE NOS CHANTIERS</h2>
       <div class="divider-line reveal up reveal-delay-2"></div>
     </div>
     <div class="news-grid">
       <?php
       $news = [
-        ['Nouveau marché','15 Jan. 2025','ADJUDICATION D\'UN IMMEUBLE R+7 À RABAT-AGDAL','Prefabloc a été retenu pour la construction d\'un immeuble résidentiel de 42 logements à Agdal. Le chantier débute en mars 2025, avec une structure en voiles et poteaux béton armé sur 3 niveaux de sous-sol.','assets/images/realisations/IMG_4554.jpg'],
-        ['Certification','08 Jan. 2025','RENOUVELLEMENT ISO 9001 : NOTRE SMQ VALIDÉ POUR 3 ANS','Notre Système de Management de la Qualité a passé l\'audit de renouvellement avec zéro non-conformité majeure. Ce résultat confirme la maîtrise de nos processus de contrôle du béton, de traçabilité des matériaux et de gestion documentaire.','assets/images/realisations/IMG_5070_2.jpg'],
-        ['Équipement','22 Déc. 2024','ACQUISITION D\'UNE GRUE À TOUR 280 EC-H LIEBHERR','Pour répondre à la montée en puissance de nos chantiers R+8 et plus, nous avons investi dans une grue à tour à montage rapide de 280 mètres-tonnes, portant notre parc de levage à 6 unités opérationnelles.','assets/images/realisations/IMG_0120.jpg'],
+        ['Adjudication','15 Jan. 2025','IMMEUBLE R+7 AGDAL — NOUVEAU MARCHÉ SIGNÉ','Prefabloc a été retenu à l\'issue d\'un appel d\'offres restreint pour la construction d\'un immeuble de 42 logements à Rabat-Agdal. Le lancement des fouilles est prévu en mars 2025, pour une livraison sous 24 mois.','assets/images/realisations/IMG_4554.jpg'],
+        ['Certification','08 Jan. 2025','ISO 9001 : AUDIT ZÉRO ÉCART — SMQ RECERTIFIÉ POUR 3 ANS','Notre Système de Management de la Qualité a été audité par Bureau Veritas sans aucune non-conformité majeure. La certification porte sur nos processus de contrôle béton, de traçabilité et de gestion documentaire chantier.','assets/images/realisations/IMG_5070_2.jpg'],
+        ['Parc matériel','22 Déc. 2024','GRUE LIEBHERR 280 EC-H : LE PARC PASSE À 6 UNITÉS','Face à la montée en puissance de nos chantiers R+8 et au-delà, nous avons intégré une grue Liebherr 280 EC-H à montage rapide. Notre parc de levage compte désormais 6 grues à tour opérationnelles en simultané.','assets/images/realisations/IMG_0120.jpg'],
       ];
       foreach ($news as $i => [$cat,$date,$title,$excerpt,$img]): ?>
       <div class="news-card reveal up reveal-delay-<?= $i + 1 ?>">
@@ -298,11 +298,11 @@ include 'includes/header.php';
 <!-- ══ CTA ══ -->
 <section class="cta-banner">
   <div class="container">
-    <h2 class="reveal up">VOTRE CHANTIER MÉRITE<br>UN <span class="gold">VRAI CONSTRUCTEUR</span></h2>
-    <p class="reveal up reveal-delay-1">Déposez votre dossier — plans, superficie, contraintes de site — et recevez une offre technique et financière chiffrée sous 48h ouvrées, sans engagement de votre part.</p>
+    <h2 class="reveal up">VOTRE PROJET MÉRITE<br>UN <span class="gold">VRAI PARTENAIRE</span></h2>
+    <p class="reveal up reveal-delay-1">Transmettez-nous vos plans, votre programme ou simplement vos contraintes de site — notre bureau d'études vous revient avec une offre technique et financière détaillée sous 48h ouvrées, sans engagement.</p>
     <div class="cta-btns reveal up reveal-delay-2">
-      <a href="contact.php" class="btn btn-gold">Soumettre mon projet →</a>
-      <a href="realisations.php" class="btn btn-outline-white">Voir nos références</a>
+      <a href="contact.php" class="btn btn-gold">Soumettre un dossier →</a>
+      <a href="realisations.php" class="btn btn-outline-white">Consulter nos références</a>
     </div>
   </div>
 </section>
