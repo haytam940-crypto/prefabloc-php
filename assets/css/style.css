@@ -1814,7 +1814,404 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /* =========================================================
-   SERVICES PAGE — redesign
+   À PROPOS v2 — redesign complet
+   ========================================================= */
+
+/* Hero */
+.ap2-hero {
+  position: relative; height: 500px; overflow: hidden;
+  display: flex; align-items: flex-end;
+}
+.ap2-hero-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover; object-position: center 40%;
+}
+.ap2-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(6,15,30,.92) 0%, rgba(6,15,30,.55) 50%, rgba(6,15,30,.15) 100%);
+}
+.ap2-hero-inner {
+  position: relative; z-index: 2; padding-bottom: 52px;
+}
+.ap2-hero-tag {
+  font-size: 11px; font-weight: 700; color: var(--gold);
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px;
+}
+.ap2-hero-title {
+  font-size: clamp(32px,5vw,60px); font-weight: 900; color: #fff;
+  line-height: 1.05; letter-spacing: -.5px; margin: 0 0 14px;
+  text-transform: uppercase;
+}
+.ap2-hero-title span { color: var(--sky); }
+.ap2-hero-sub {
+  font-size: 15px; color: rgba(255,255,255,.7);
+}
+
+/* Sections communes */
+.ap2-section { padding: 72px 0; }
+.ap2-section-light { background: #F5F6FA; }
+.ap2-tag {
+  display: inline-block;
+  font-size: 11px; font-weight: 700; color: var(--sky);
+  letter-spacing: 1.5px; text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.ap2-h2 {
+  font-size: clamp(22px,3vw,36px); font-weight: 900;
+  color: var(--navy); text-transform: uppercase;
+  letter-spacing: -.3px; line-height: 1.1; margin: 0 0 4px;
+}
+.ap2-h2-center {
+  font-size: clamp(22px,3vw,36px); font-weight: 900;
+  color: var(--navy); text-transform: uppercase;
+  letter-spacing: -.3px; line-height: 1.1; margin: 10px 0 0;
+  text-align: center;
+}
+.ap2-divider {
+  width: 48px; height: 3px; background: var(--gold);
+  border-radius: 2px; margin: 18px 0 22px;
+}
+.ap2-divider-center {
+  width: 48px; height: 3px; background: var(--gold);
+  border-radius: 2px; margin: 18px auto 40px;
+}
+.ap2-lead { font-size: 16px; color: var(--navy-dark); line-height: 1.8; margin-bottom: 14px; font-weight: 500; }
+.ap2-para { font-size: 15px; color: var(--gray); line-height: 1.8; margin-bottom: 14px; }
+.ap2-sec-head { text-align: center; margin-bottom: 48px; }
+
+/* Split histoire */
+.ap2-split {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  min-height: 520px;
+}
+.ap2-split-photo {
+  position: relative; overflow: hidden;
+}
+.ap2-split-photo img {
+  width: 100%; height: 100%; object-fit: cover;
+  min-height: 440px;
+}
+.ap2-split-badge {
+  position: absolute; bottom: 28px; left: 28px;
+  background: var(--gold); color: var(--navy-dark);
+  border-radius: 14px; padding: 16px 22px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
+}
+.ap2-badge-num {
+  font-size: 36px; font-weight: 900; line-height: 1;
+}
+.ap2-badge-lbl {
+  font-size: 12px; font-weight: 700; line-height: 1.4; margin-top: 4px;
+}
+.ap2-split-text {
+  padding: 64px 56px; display: flex; flex-direction: column; justify-content: center;
+  background: #fff;
+}
+
+/* Timeline */
+.ap2-timeline-wrap {
+  background: var(--navy-dark); padding: 48px 0;
+}
+.ap2-timeline {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 0; position: relative;
+}
+.ap2-timeline::before {
+  content: ''; position: absolute;
+  top: 36px; left: 12.5%; right: 12.5%; height: 2px;
+  background: rgba(255,255,255,.15);
+}
+.ap2-tline-item {
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center; padding: 0 16px;
+}
+.ap2-tline-year {
+  font-size: 22px; font-weight: 900; color: var(--gold);
+  margin-bottom: 12px; line-height: 1;
+}
+.ap2-tline-dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--gold); border: 3px solid var(--navy-dark);
+  box-shadow: 0 0 0 2px var(--gold);
+  margin-bottom: 16px; flex-shrink: 0;
+  position: relative; z-index: 1;
+}
+.ap2-tline-text {
+  font-size: 13px; color: rgba(255,255,255,.65); line-height: 1.6;
+}
+
+/* Stats band */
+.ap2-stats-band {
+  background: var(--navy); padding: 56px 0;
+}
+.ap2-stats-grid {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 1px; background: rgba(255,255,255,.08);
+  border-radius: 16px; overflow: hidden;
+}
+.ap2-stat {
+  padding: 40px 28px; background: rgba(6,15,30,.6);
+  text-align: center;
+  transition: background .25s;
+}
+.ap2-stat:hover { background: rgba(6,15,30,.85); }
+.ap2-stat-val {
+  font-size: clamp(36px,4.5vw,54px); font-weight: 900;
+  color: var(--gold); line-height: 1; margin-bottom: 10px;
+}
+.ap2-stat-val span { font-size: clamp(24px,3vw,36px); }
+.ap2-stat-lbl {
+  font-size: 12px; color: rgba(255,255,255,.6);
+  font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+}
+
+/* Engagements horizontaux */
+.ap2-engage-list {
+  display: flex; flex-direction: column; gap: 0;
+}
+.ap2-engage-item {
+  display: grid; grid-template-columns: 72px 1fr 80px;
+  align-items: center; gap: 28px;
+  padding: 32px 0; border-bottom: 1px solid #E5E7EB;
+  transition: background .2s;
+}
+.ap2-engage-item:last-child { border-bottom: none; }
+.ap2-engage-item:hover { background: rgba(0,174,239,.03); }
+.ap2-engage-icon {
+  width: 72px; height: 72px;
+  background: rgba(0,174,239,.08); border: 1.5px solid rgba(0,174,239,.2);
+  border-radius: 14px; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.ap2-engage-icon svg { color: var(--sky); width: 36px; height: 36px; }
+.ap2-engage-body h3 {
+  font-size: 18px; font-weight: 800; color: var(--navy);
+  margin: 0 0 8px;
+}
+.ap2-engage-body p {
+  font-size: 14px; color: var(--gray); line-height: 1.75; margin: 0;
+}
+.ap2-engage-num {
+  font-size: 48px; font-weight: 900;
+  color: rgba(0,174,239,.1); text-align: right;
+  line-height: 1; font-variant-numeric: tabular-nums;
+}
+
+/* Équipe */
+.ap2-team {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;
+}
+.ap2-team-card {
+  border-radius: 16px; overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,.08);
+  background: #fff; border: 1px solid #EAECF0;
+  transition: transform .3s, box-shadow .3s;
+}
+.ap2-team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.12);
+}
+.ap2-team-photo {
+  position: relative; height: 200px; overflow: hidden;
+}
+.ap2-team-photo img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .4s;
+}
+.ap2-team-card:hover .ap2-team-photo img { transform: scale(1.05); }
+.ap2-team-photo-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(11,31,58,.5) 0%, transparent 60%);
+}
+.ap2-team-info { padding: 24px; }
+.ap2-team-initials {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: var(--sky); color: #fff;
+  font-size: 16px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 12px;
+}
+.ap2-team-info h3 {
+  font-size: 17px; font-weight: 800; color: var(--navy); margin: 0 0 4px;
+}
+.ap2-team-role {
+  font-size: 12px; color: var(--sky); font-weight: 700;
+  letter-spacing: .3px; margin-bottom: 12px;
+}
+.ap2-team-info p {
+  font-size: 13.5px; color: var(--gray); line-height: 1.7; margin: 0;
+}
+
+/* Certifications bande */
+.ap2-certs-band {
+  background: var(--navy-dark); padding: 36px 0;
+}
+.ap2-certs-label {
+  font-size: 10px; font-weight: 700; color: rgba(255,255,255,.4);
+  letter-spacing: 2px; text-transform: uppercase;
+  text-align: center; margin-bottom: 24px;
+}
+.ap2-certs {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; flex-wrap: wrap;
+}
+.ap2-cert {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 6px; padding: 0 32px; text-align: center;
+}
+.ap2-cert-icon svg { color: var(--gold); width: 28px; height: 28px; }
+.ap2-cert-name {
+  font-size: 14px; font-weight: 800; color: #fff;
+}
+.ap2-cert-desc {
+  font-size: 11px; color: rgba(255,255,255,.5);
+}
+.ap2-cert-sep {
+  width: 1px; height: 40px; background: rgba(255,255,255,.12);
+}
+
+/* =========================================================
+   SERVICES v2 — redesign complet
+   ========================================================= */
+
+/* Hero */
+.sv2-hero {
+  position: relative; height: 480px; overflow: hidden;
+  display: flex; align-items: flex-end;
+}
+.sv2-hero-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+}
+.sv2-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(6,15,30,.92) 0%, rgba(6,15,30,.5) 55%, rgba(6,15,30,.1) 100%);
+}
+.sv2-hero-inner {
+  position: relative; z-index: 2; padding-bottom: 52px;
+}
+.sv2-hero-tag {
+  font-size: 11px; font-weight: 700; color: var(--gold);
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px;
+}
+.sv2-hero-title {
+  font-size: clamp(30px,5vw,58px); font-weight: 900; color: #fff;
+  line-height: 1.05; letter-spacing: -.5px; margin: 0 0 14px;
+  text-transform: uppercase;
+}
+.sv2-hero-title span { color: var(--sky); }
+.sv2-hero-sub {
+  font-size: 15px; color: rgba(255,255,255,.7); max-width: 520px;
+}
+
+/* Nav ancres */
+.sv2-nav {
+  background: #fff;
+  border-bottom: 2px solid #F0F1F5;
+  position: sticky; top: 72px; z-index: 50;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+.sv2-nav-inner {
+  display: flex; overflow-x: auto; scrollbar-width: none; gap: 0;
+}
+.sv2-nav-inner::-webkit-scrollbar { display: none; }
+.sv2-nav-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 22px; text-decoration: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px; white-space: nowrap;
+  transition: border-color .2s, background .2s;
+}
+.sv2-nav-item:hover { background: #F5F6FA; border-bottom-color: rgba(0,174,239,.3); }
+.sv2-nav-num {
+  font-size: 11px; font-weight: 800; color: var(--gold);
+}
+.sv2-nav-lbl {
+  font-size: 13px; font-weight: 600; color: var(--gray);
+}
+.sv2-nav-item:hover .sv2-nav-lbl { color: var(--navy); }
+
+/* Service section */
+.sv2-service { padding: 0; }
+.sv2-service-inner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  min-height: 480px;
+}
+.sv2-reverse { direction: rtl; }
+.sv2-reverse > * { direction: ltr; }
+.sv2-service-photo {
+  position: relative; overflow: hidden;
+}
+.sv2-service-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover; min-height: 380px;
+  transition: transform .5s ease;
+}
+.sv2-service:hover .sv2-service-photo img { transform: scale(1.03); }
+.sv2-service-num-bg {
+  position: absolute; bottom: -10px; right: -10px;
+  font-size: 120px; font-weight: 900;
+  color: rgba(0,0,0,.08); line-height: 1;
+  pointer-events: none; user-select: none;
+}
+.sv2-service-content {
+  padding: 60px 52px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.sv2-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 700; color: var(--sky);
+  letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px;
+}
+.sv2-tag svg { color: var(--sky); }
+.sv2-h2 {
+  font-size: clamp(20px,2.5vw,30px); font-weight: 900;
+  color: var(--navy); text-transform: uppercase;
+  letter-spacing: -.3px; line-height: 1.15; margin: 0 0 4px;
+}
+.sv2-divider {
+  width: 44px; height: 3px; background: var(--gold);
+  border-radius: 2px; margin: 16px 0 20px;
+}
+.sv2-desc {
+  font-size: 14.5px; color: var(--gray); line-height: 1.8; margin-bottom: 12px;
+}
+.sv2-feats {
+  list-style: none; padding: 0; margin: 12px 0 0;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 7px 16px;
+}
+.sv2-feats li {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 13px; color: var(--navy-dark); font-weight: 500;
+}
+.sv2-feats li svg { color: var(--sky); flex-shrink: 0; }
+
+/* Garanties bande */
+.sv2-garanties {
+  background: var(--navy-dark); padding: 52px 0;
+}
+.sv2-garanties-grid {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 1px; background: rgba(255,255,255,.08);
+  border-radius: 16px; overflow: hidden;
+}
+.sv2-garantie {
+  padding: 36px 24px; background: rgba(6,15,30,.5);
+  text-align: center; transition: background .25s;
+}
+.sv2-garantie:hover { background: rgba(6,15,30,.8); }
+.sv2-garantie-icon { margin-bottom: 12px; }
+.sv2-garantie-icon svg { color: var(--gold); width: 32px; height: 32px; }
+.sv2-garantie-val {
+  font-size: 26px; font-weight: 900; color: #fff; line-height: 1; margin-bottom: 6px;
+}
+.sv2-garantie-lbl {
+  font-size: 12px; color: rgba(255,255,255,.55);
+  font-weight: 600; letter-spacing: .5px;
+}
+
+/* =========================================================
+   SERVICES PAGE — ancienne version (gardé pour compatibilité)
    ========================================================= */
 
 /* Photo strip banner */
