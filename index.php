@@ -6,7 +6,9 @@ include 'includes/header.php';
 
 <!-- ══ HERO ══ -->
 <section class="hero">
-  <div class="hero-bg"></div>
+  <video class="hero-bg" autoplay muted loop playsinline preload="auto">
+    <source src="assets/videos/chantier-primavera-web.mp4" type="video/mp4">
+  </video>
   <div class="hero-overlay"></div>
 
   <div class="hero-content">

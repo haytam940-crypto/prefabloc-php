@@ -82,34 +82,6 @@ foreach ($projects as $p) {
   </div>
 </section>
 
-<!-- Section Vidéo Chantier -->
-<section class="section" style="background:var(--navy-dark); padding-top:80px; padding-bottom:80px;">
-  <div class="container">
-    <div class="sec-head">
-      <span class="sec-tag reveal up" style="background:rgba(255,255,255,.1);color:var(--gold);">Avancement</span>
-      <h2 class="sec-title reveal up reveal-delay-1" style="color:var(--white);">VIDÉO<br><span class="gold">CHANTIER</span></h2>
-      <div class="divider-line reveal up reveal-delay-2"></div>
-      <p class="sec-sub reveal up reveal-delay-3" style="color:rgba(255,255,255,.7);">Suivez l'avancement en temps réel de nos chantiers — du gros œuvre à la livraison.</p>
-    </div>
-
-    <div class="reveal up reveal-delay-1" style="max-width:900px;margin:0 auto;">
-      <div style="position:relative;border-radius:16px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.5); background:#000;">
-        <video
-          controls
-          preload="metadata"
-          style="width:100%;display:block;max-height:520px;object-fit:cover;"
-          poster="assets/images/realisations/IMG_4170.jpg">
-          <source src="assets/videos/chantier-primavera-web.mp4" type="video/mp4">
-          Votre navigateur ne supporte pas la lecture vidéo.
-        </video>
-      </div>
-      <p style="color:rgba(255,255,255,.5);font-size:13px;text-align:center;margin-top:16px;">
-        Avancement Chantier Primavera — Prefabloc
-      </p>
-    </div>
-  </div>
-</section>
-
 <!-- Galerie Photos -->
 <section class="section">
   <div class="container">
